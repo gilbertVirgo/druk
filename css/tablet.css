@@ -1,0 +1,228 @@
+@media screen and (max-width: 1200px) {
+	body {
+		position: relative;
+		height: 14831px;
+
+		background-color: #fffafa;
+	}
+
+	#group-17 {
+		position: absolute;
+		width: 100%;
+		height: 822px;
+	}
+
+	#rectangle-7 {
+		/* Rectangle 7 */
+
+		position: absolute;
+		width: 100%;
+		height: 792px;
+		left: 0px;
+		top: 0px;
+
+		background: #eabab1;
+	}
+
+	#rectangle-8 {
+		position: absolute;
+		width: 100%;
+		height: 30px;
+		left: 0px;
+		top: 792px;
+
+		background: linear-gradient(
+			180deg,
+			#eabab1 0%,
+			rgba(234, 186, 177, 0) 100%
+		);
+	}
+
+	#the-team-goga {
+		/* The Team  GOGA Buffet */
+
+		position: absolute;
+		width: 278px;
+		height: 134px;
+		left: 21px;
+		top: 192px;
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 42px;
+		line-height: 114%;
+		/* or 48px */
+
+		display: flex;
+		align-items: center;
+		text-align: center;
+
+		color: #ffffff;
+	}
+
+	#group-111 {
+		position: absolute;
+		width: 285px;
+		height: 29px;
+		left: 14px;
+		top: 351px;
+	}
+
+	#written-by-owen {
+		float: left;
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 21px;
+		display: flex;
+
+		color: #ffffff;
+	}
+
+	#illustrated-by-caitlin {
+		float: right;
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 21px;
+		display: flex;
+
+		color: #ffffff;
+	}
+
+	#group-900 {
+	}
+
+	#b1-canopy-l1 {
+		/* B1_Canopy_L1 */
+
+		position: absolute;
+		width: 320px;
+		height: 154px;
+		left: 24px;
+		top: 578px;
+
+		background: url(../assets/B1_Canopy_L1.png);
+	}
+
+	#b1-canopy-l2 {
+	}
+
+	#b1-canopy-l3 {
+	}
+	#b1-canopy-l4 {
+	}
+	#group-4 {
+	}
+	#sunlight-flickers-through {
+	}
+	#b2-buffet-l1 {
+	}
+	#b2-buffet-l2 {
+	}
+	#group-6 {
+	}
+	#b2-buffet-l3 {
+	}
+	#b2-buffet-l4 {
+	}
+	#frame-10 {
+	}
+	#so-geoff-samantha {
+	}
+	#group-45 {
+	}
+	#give-way-to {
+	}
+	#apologise {
+	}
+	#then-begin-again {
+	}
+	#order-asserts-itself {
+	}
+	#group-7 {
+	}
+	#quite-so-quite {
+	}
+	#group-9 {
+	}
+	#b3-hands-l1 {
+	}
+	#b3-hands-l2 {
+	}
+	#b3-hands-l3 {
+	}
+	#b3-hands-l4 {
+	}
+	#b3-hands-l5 {
+	}
+	#b3-hands-l6 {
+	}
+	#yes-yes-please {
+	}
+	#geoff-nods-agrees {
+	}
+	#too-right-samantha {
+	}
+	#cheers-samantha-i {
+	}
+	#group-11 {
+	}
+	#i-lost-weight {
+	}
+	#pink-strip {
+	}
+	#well-you-have {
+	}
+	#group-14 {
+	}
+	#what-were-talking {
+	}
+	#we-know-that {
+	}
+	#not-so-much {
+	}
+	#group-12 {
+	}
+	#b4-pool-l1 {
+	}
+	#b4-pool-l2 {
+	}
+	#b4-pool-l3 {
+	}
+	#b4-pool-l4 {
+	}
+	#which-is-where {
+	}
+	#pink-strip-lrg {
+	}
+	#certainly-is-adds {
+	}
+	#youre-right-brother {
+	}
+	#group-13 {
+	}
+	#b5-map-l1 {
+	}
+	#b5-map-l2 {
+	}
+	#b5-map-l3 {
+	}
+	#yes-perhaps-you {
+	}
+	#peer-mentoring-can {
+	}
+	#so-shabaz-what {
+	}
+	#laughter-ripples-across {
+	}
+	#b1-canopy-l2-bottom {
+	}
+	#b1-canopy-l3-bottom {
+	}
+}
