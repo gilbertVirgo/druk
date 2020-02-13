@@ -1,0 +1,1035 @@
+@media screen and (min-width: 1201px) {
+	body {
+		/* Desktop - 18 */
+
+		position: relative;
+		height: 15752px;
+
+		background: #fffafa;
+	}
+
+	#group-17 {
+		/* Group 17 */
+
+		position: absolute;
+		width: 100%;
+		height: 2206px;
+	}
+
+	#rectangle-7 {
+		/* Rectangle 7 */
+
+		position: absolute;
+		width: 100%;
+		height: 2157px;
+		left: 0px;
+		top: 0px;
+
+		background: #eabab1;
+	}
+
+	#rectangle-8 {
+		/* Rectangle 8 */
+
+		position: absolute;
+		width: 100%;
+		height: 49px;
+		left: 0px;
+		top: 2157px;
+
+		background: linear-gradient(
+			180deg,
+			#eabab1 0%,
+			rgba(234, 186, 177, 0) 100%
+		);
+	}
+
+	#the-team-goga {
+		position: absolute;
+		width: 100%;
+		height: 297px;
+		left: -2px;
+		top: 232px;
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 112px;
+		line-height: 114%;
+		/* or 128px */
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		color: #ffffff;
+	}
+
+	#group-111 {
+		position: absolute;
+		width: 951px;
+		height: 56px;
+
+		left: 244px;
+		top: 584px;
+	}
+
+	#written-by-owen {
+		float: left;
+		font-family: PT Serif;
+		font-style: normal;
+		font-size: 25px;
+		line-height: 33px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+
+		color: #ffffff;
+	}
+
+	#illustrated-by-caitlin {
+		float: right;
+		font-family: PT Serif;
+		font-style: normal;
+		font-size: 25px;
+		line-height: 33px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+
+		color: #ffffff;
+	}
+
+	#group-900 {
+		/* Group 9 */
+
+		position: absolute;
+		width: 762.67px;
+		height: 533.91px;
+
+		transform: translateX(-50%);
+	}
+
+	#b1-canopy-l1 {
+		position: absolute;
+		width: 1524px;
+		height: 735px;
+		left: 71px;
+		top: 1078px;
+
+		background: url(../assets/B1_Canopy_L1.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#b1-canopy-l2 {
+		position: absolute;
+		width: 1480px;
+		height: 712px;
+		left: -62px;
+		top: 1581px;
+
+		background: url(../assets/B1_Canopy_L2.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#b1-canopy-l3 {
+		/* B1_Canopy_L3 */
+
+		position: absolute;
+		width: 1136px;
+		height: 1958px;
+		left: 508px;
+		top: 849px;
+
+		background: url(../assets/B1_Canopy_L3.png) no-repeat center center;
+		background-size: 100% 100%;
+		mix-blend-mode: multiply;
+	}
+
+	#b1-canopy-l4 {
+		/* B1_Canopy_L4 */
+
+		position: absolute;
+		width: 1156px;
+		height: 1120px;
+		left: 227px;
+		top: 1270px;
+
+		background: url(../assets/B1_Canopy_L4.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#group-4 {
+		/* Group 4 */
+
+		position: absolute;
+		width: 794px;
+		height: 378px;
+	}
+
+	#sunlight-flickers-through {
+		/* Sunlight flickers through a canopy of leaves, illuminating an open conservatory, where the group are gathered around a buffet. Samosas, bhajis, and a selection of main courses flavour the delicate breeze. Hours of preparation, on the part of Kamila and Malik, give rise to murmurs of approval from the other members of the gathering. First to speak is Malik, Kamila’s husband, formally welcoming the various guests to his home. */
+
+		position: absolute;
+		width: 794px;
+		height: 378px;
+		top: 2383px;
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 27px;
+		line-height: 170%;
+		/* or 46px */
+
+		display: flex;
+		align-items: center;
+		text-align: center;
+
+		color: #531a10;
+	}
+
+	#b2-buffet-l1 {
+		/* B2_buffet_L1 */
+
+		position: absolute;
+		width: 864px;
+		height: 693px;
+		left: -1px;
+		top: 2784px;
+
+		background: url(../assets/B2_buffet_L1.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#b2-buffet-l2 {
+		/* B2_buffet_L2 */
+
+		position: absolute;
+		width: 895px;
+		height: 895px;
+		left: 17px;
+		top: 2613px;
+
+		background: url(../assets/B2_buffet_L2.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#group-6 {
+		/* Group 6 */
+
+		position: absolute;
+		width: 895px;
+		height: 628.36px;
+	}
+
+	#b2-buffet-l3 {
+		/* B2_buffet_L3 */
+
+		position: absolute;
+		width: 831.14px;
+		height: 341.22px;
+		left: 0.8px;
+		top: 2908.54px;
+
+		background: url(../assets/B2_buffet_L3.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#b2-buffet-l4 {
+		/* B2_buffet_L4 */
+
+		position: absolute;
+		width: 895px;
+		height: 628.36px;
+		left: -2px;
+		top: 2878.24px;
+
+		background: url(../assets/B2_buffet_L4.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#frame-10 {
+		/* Frame 10 */
+
+		/* Auto Layout */
+
+		display: flex;
+		flex-direction: row;
+		padding: 0px;
+
+		position: absolute;
+		width: 794px;
+		height: 528px;
+		top: 3574px;
+
+		background: #ffffff;
+	}
+
+	#so-geoff-samantha {
+		/* ‘So, Geoff, Samantha, it is such a pleasure to welcome you to our Team GOGA Buffet, and on such a beautiful day. This is my brother, Shabaz and, of course, you already know Kamila and me.’ ‘A perfect day to Get Out and Get Active, perhaps, my husband?’ Kamila’s voice is the perfect invitation for Malik to laugh, smile, continue. ‘Absolutely, my dear Kamila. The weather gods, it seems, are our friends. Perhaps summer is here at last. Now, Geoff and Samantha, you know that I have already told Shabaz some of what it is that you do, but it would be good, I think, for him to hear more from you. Oh, and do please help yourself to food. We mustn’t let all of that hard work go to waste, now, must we? It was so hot in the kitchen today, I can tell you.’ ‘Shouldn’t that be “we can tell you”, Malik? There were two of us in the kitchen, when I last counted.’ */
+
+		position: static;
+		width: 794px;
+		height: 528px;
+		left: 0px;
+		top: 0px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		text-indent: 20px;
+
+		color: #531a10;
+
+		/* Inside Auto Layout */
+
+		flex: none;
+		order: 0;
+		align-self: center;
+		margin: 10px 0px;
+	}
+
+	#group-45 {
+		position: absolute;
+		top: 4189px;
+		width: 615px;
+	}
+
+	#give-way-to {
+		/* ‘give way to one other, */
+
+		position: absolute;
+		width: 411px;
+		height: 63px;
+		left: 0;
+		top: 0;
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 133.5%;
+		/* or 47px */
+
+		text-align: right;
+		letter-spacing: 0.02em;
+
+		color: #531a10;
+	}
+
+	#apologise {
+		/* apologise, */
+
+		position: absolute;
+		width: 411px;
+		height: 59px;
+		left: 173px;
+		top: 95px;
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 133.5%;
+		/* or 47px */
+
+		text-align: right;
+		letter-spacing: 0.02em;
+
+		color: #531a10;
+	}
+
+	#then-begin-again {
+		/* then begin again, */
+
+		position: absolute;
+		width: 411px;
+		height: 53px;
+		left: 100px;
+		top: 188px;
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 133.5%;
+		/* or 47px */
+
+		text-align: right;
+		letter-spacing: 0.02em;
+
+		color: #531a10;
+	}
+
+	#order-asserts-itself {
+		/* order asserts itself.’ */
+
+		position: absolute;
+		width: 411px;
+		height: 47px;
+		left: 0px;
+		top: 299px;
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 133.5%;
+		/* identical to box height, or 47px */
+
+		text-align: right;
+		letter-spacing: 0.02em;
+
+		color: #531a10;
+	}
+
+	#group-7 {
+		/* Group 7 */
+
+		position: absolute;
+		width: 387px;
+		height: 510px;
+	}
+
+	#quite-so-quite {
+		/* ‘Quite so, quite so, Kamila, my dear wife. Anyway, how shall we proceed?’ ‘Well, Malik, perhaps the best way forward is for Geoff, Samantha, and yourself to explain how peer mentoring has benefitted you, so that Shabaz can get a clearer idea of what it’s all about. What do you all think?’ Kamila, seated now between Malik and Shabaz, pats her brother-in-law’s hand, as her question rides the pause. */
+
+		position: absolute;
+		width: 387px;
+		height: 510px;
+		left: 730px;
+		top: 4129px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		letter-spacing: -0.02em;
+		text-indent: 20px;
+
+		color: #531a10;
+	}
+
+	#group-9 {
+		/* Group 9 */
+
+		position: absolute;
+		width: 762.67px;
+		height: 533.91px;
+		transform: translateX(-50%);
+	}
+
+	#b3-hands-l1 {
+		/* B3_HANDS_L1 */
+
+		position: absolute;
+		width: 713.56px;
+		height: 292.69px;
+		left: 380.63px;
+		top: 4945.22px;
+
+		background: url(../assets/B3_HANDS_L1.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#b3-hands-l2 {
+		/* B3_HANDS_L2 */
+
+		position: absolute;
+		width: 762.67px;
+		height: 235.73px;
+		left: 331.52px;
+		top: 4732.58px;
+
+		background: url(../assets/B3_HANDS_L2.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#b3-hands-l3 {
+		/* B3_HANDS_L3 */
+
+		position: absolute;
+		width: 291px;
+		height: 285px;
+		left: 415px;
+		top: 4863px;
+
+		background: url(../assets/B3_HANDS_L3.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#b3-hands-l4 {
+		/* B3_HANDS_L4 */
+
+		position: absolute;
+		width: 191px;
+		height: 215px;
+		left: 738px;
+		top: 4704px;
+
+		background: url(../assets/B3_HANDS_L4.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#b3-hands-l5 {
+		/* B3_HANDS_L5 */
+
+		position: absolute;
+		width: 285px;
+		height: 202px;
+		left: 518px;
+		top: 4959px;
+
+		background: url(../assets/B3_HANDS_L5.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#b3-hands-l6 {
+		/* B3_HANDS_L6 */
+
+		position: absolute;
+		width: 239px;
+		height: 240px;
+		left: 749px;
+		top: 4777px;
+
+		background: url(../assets/B3_HANDS_L6.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#yes-yes-please {
+		/* ‘Yes. Yes, please.’ Shabaz signals his assent, smiling nervously. After a moment’s hesitation, during which Geoff and Samantha both begin to speak, then give way to one other, apologise, then begin again, order asserts itself. Samantha begins, explaining in warm, clear, enthused tones, what it means to be able to mentor others, and how the peer mentoring scheme has meant so much to her, ever since she was introduced to Geoff. ‘Wonderful, isn’t it, that mentorship can become such an interesting chain reaction?’ */
+
+		position: absolute;
+		width: 794px;
+		height: 323px;
+		top: 5332px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		text-indent: 20px;
+
+		color: #531a10;
+	}
+
+	#geoff-nods-agrees {
+		/* Geoff, nods, agrees. ‘Like dominos, really. Disability Rights UK have done something so special in bringing us all together in a way that helps us all. I mean, a year ago myself and Samantha hadn’t even met, let alone us and Malik. Now we’re all part of something, helping each other on a fascinating shared journey, an adventure. Who would have thought those early small steps would have brought us all so far?’ */
+
+		position: absolute;
+		width: 794px;
+		height: 414px;
+		top: 5673px;
+
+		/* Desktop_Emph_LrgCopy */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 170%;
+		/* or 51px */
+
+		color: #531a10;
+	}
+
+	#too-right-samantha {
+		/* ‘Too right.’ Samantha finds herself confirming, her bright complexion suddenly more serious for an instant. ‘I’d hit thirty, and my vision and mobility were getting worse. The MS seemed to be getting more severe, and doing it fast. Then I met Geoff and he got me to the Swimming Club, helped me to meet other people like me, going through the same thing. He also encouraged me to focus on getting pleasure and enjoyment from exercising, which was a whole new way of looking at things, or it was for me, at least. As a result, I lost weight, got fitter, made friends. Geoff guided me through my own hard times and low points, and was such a great listener. He gave me the kick I needed to understand how I could start helping other people, too. It was amazing. Before I knew it, there I was, little old me, becoming a mentor as well, just like this man, here. Just shows what can happen when you’ve got someone there at your side, someone who knows what they’re on about.’ */
+
+		position: absolute;
+		width: 794px;
+		height: 531px;
+		top: 6118px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		text-indent: 20px;
+
+		color: #531a10;
+	}
+
+	#cheers-samantha-i {
+		/* ‘Cheers, Samantha. I should be blushing, shouldn’t I? But, to be fair, I reckon you helped me, just as much as I helped you. I mean, there were plenty of mornings I might have stayed in bed, if it hadn’t been for those emails and texts and phonecalls of yours, reminding me it was swimming day. It takes two to tango, after all.’ */
+
+		position: absolute;
+		width: 397px;
+		height: 373px;
+		top: 6651px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		text-indent: 20px;
+
+		color: #531a10;
+	}
+
+	#group-11 {
+		/* Group 11 */
+
+		position: absolute;
+		width: 258px;
+		height: 144px;
+	}
+
+	#i-lost-weight {
+		/* ‘I lost weight,   got fitter,   made friends.’ */
+
+		position: absolute;
+		width: 258px;
+		height: 144px;
+		left: 100px;
+		top: 6714px;
+
+		/* Desktop_SmlCopy_LrgF */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 133.5%;
+		/* or 47px */
+
+		letter-spacing: 0.02em;
+
+		color: #531a10;
+	}
+
+	#pink-strip {
+		/* Pink_Strip */
+		position: absolute;
+		width: 226px;
+		height: 226px;
+		margin-left: 200px;
+		top: 6759.43px;
+		z-index: -1;
+
+		mix-blend-mode: normal;
+		background: url(../assets/Pink_Strip.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#well-you-have {
+		/* ‘Well, you have both done wonders for Malik, that much I do know.’ Kamila’s smile reassures, underlining her words. “It’s true. He was turning into a potato.’ She laughs and pats her husband’s abdomen, prompting him to laugh as well. ‘Yes. I was putting on so much weight, losing confidence, feeling such a burden. I think part of the problem was not knowing what’s out there for somebody like me, like us, I should say. That is one of biggest challenges, or it was for me. It can be so frustrating when you know that you could be doing more to, to…’ ‘Get Out and Get Active, perhaps, Malik’ ‘Yes, Geoff. Exactly. Get Out and Get Active, as they say at Disability Rights UK. That is the perfect phrase actually, because when you, when any of us, don’t know where or how to even start to get physically active, let alone to carry on from there, life can become a downward spiral. You become not lonely, maybe, but isolated, if I can say that. I also used to worry about the amount of time it might take to do these things, but active time is time so well spent. And what else was I doing anyway, right? Just sitting around!’     ‘We know that feeling, Malik, don’t we, Samantha?’ Geoff turns towards Samantha, then faces Malik and Kamila again. ‘What we’re talking about here is wellbeing, and everything that involves. Not that it’s easy. As you know, we had to start small, didn’t we? It was all about setting realistic, achievable goals, helping each other to reach those targets, getting the ball rolling. So often, that is the hardest part. But, with peer support, we’re all part of a team, and we motivate each other, right? The whole adventure, the process of re-energisation, has to be a shared experience, if we really want it to work.’ */
+
+		position: absolute;
+		width: 794px;
+		height: 733px;
+		top: 7040px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		text-indent: 20px;
+
+		color: #531a10;
+	}
+
+	#group-14 {
+		/* Group 14 */
+
+		position: absolute;
+		width: 793px;
+		height: 111px;
+	}
+
+	#what-were-talking {
+		/* “What we’re talking about here is wellbeing, and everything that involves...” */
+
+		position: absolute;
+		width: 793px;
+		height: 111px;
+		top: 7803px;
+
+		/* Desktop_SmlCopy_LrgF */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 133.5%;
+		/* or 47px */
+
+		letter-spacing: 0.02em;
+
+		color: #531a10;
+	}
+
+	#we-know-that {
+		/* We know that feeling, Malik, don’t we, Samantha?’ Geoff turns towards Samantha, then faces Malik and Kamila again. ‘What we’re talking about here is wellbeing, and everything that involves. Not that it’s easy. As you know, we had to start small, didn’t we? It was all about setting realistic, achievable goals, helping each other to reach those targets, getting the ball rolling. So often, that is the hardest part. But, with peer support, we’re all part of a team, and we motivate each other, right? The whole adventure, the process of re-energisation, has to be a shared experience, if we really want it to work.’ */
+
+		position: absolute;
+		width: 794px;
+		height: 161px;
+		top: 7960px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		text-indent: 20px;
+
+		color: #531a10;
+	}
+
+	#not-so-much {
+		/* ‘Not so much support, really, as friendship, something meaningful.’ Samantha’s words carry the weight of certainty. ‘And that’s just how it should be. There’s so much out there, once you know where to find it, so many fab ways to get away from it all and clear your head.’ ‘For sure, Samantha. Thanks to you and Geoff, I have seen such a big positive change in Malik. He is not just fitter. He is happier. He smiles. He is nice to himself now, as well as to me. We go out together again. Malik has remembered how to laugh. He is Malik again. Also we are learning together, learning all the time, adapting to life. That is such a beautiful thing for me to be able to say. Truly, it is.’ ‘And you’re even thinking of becoming a mentor, too. Right, Malik?’ ‘Very true, Geoff. I think this can be another way forward for us. I can help others to see how good it can be to get active. I can be a proper Activity Warrior like you and Samantha.’ ‘No reason why not, Malik. Even a little rocket like Samantha had to start somewhere. Now she’s more “at it” than me.’ ‘You’ve created a monster, Geoff.’ Samantha’s eyes sparkle with mischief. ‘But, like you say, it ain’t us that needs fixing, buddy. It’s society. If I had my way there’d be no such thing as inaccessible.’ ‘Now that would be good.’ Shabaz nods several times. ‘What I need to know now, though, is what activities I can do, and where I can do them?’ */
+
+		position: absolute;
+		width: 387px;
+		height: 1678px;
+		top: 8325px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		text-indent: 20px;
+
+		color: #531a10;
+	}
+
+	#group-12 {
+		/* Group 12 */
+
+		position: absolute;
+		width: 689.02px;
+		height: 1137.04px;
+	}
+
+	#b4-pool-l1 {
+		/* B4_POOL_L1 */
+
+		position: absolute;
+		width: 638.2px;
+		height: 1134.57px;
+		left: 13.82px;
+		top: 8482.96px;
+
+		background: url(../assets/B4_POOL_L1.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#b4-pool-l2 {
+		/* B4_POOL_L2 */
+
+		position: absolute;
+		width: 658px;
+		height: 1135px;
+		left: -37px;
+		top: 8485px;
+
+		background: url(../assets/B4_POOL_L2.png) no-repeat center center;
+		background-size: 100% 100%;
+		mix-blend-mode: multiply;
+	}
+	#b4-pool-l3 {
+		/* B4_POOL_L3 */
+
+		position: absolute;
+		width: 334px;
+		height: 654px;
+		left: 255px;
+		top: 8803px;
+
+		background: url(../assets/B4_POOL_L3.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+	#b4-pool-l4 {
+		/* B4_POOL_L4 */
+
+		position: absolute;
+		width: 583px;
+		height: 1135px;
+		left: 16px;
+		top: 8485px;
+
+		background: url(../assets/B4_POOL_L4.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#which-is-where {
+		/* ‘Which is where Samantha, Geoff, and Malik, come in, Shabaz. They know these things. That is why it is so good to meet, and why myself and Malik suggested that we could all talk here today. Trust me. So much of life is about these connections.’ */
+
+		position: absolute;
+		width: 794px;
+		height: 173px;
+		top: 10047px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		text-indent: 20px;
+
+		color: #531a10;
+	}
+
+	#pink-strip-lrg {
+		/* Rectangle 5 */
+
+		position: absolute;
+		width: 229.26px;
+		height: 761.58px;
+		margin-right: 360px;
+		top: 10220.2px;
+
+		background: url(../assets/Pink_Strip_Lrg.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#certainly-is-adds {
+		/* ‘Certainly is!’ adds Samantha, grinning. ‘There’s also plenty of information at places like DASL’. ‘DASL?’ ‘Disability Advice Service Lambeth, Shab.’ Kamila’s voice clears her brother-in-law’s doubt. ‘And Lambeth Disability Sport and Leisure, of course. It’s a partnership, Shabaz, just like all of us, mate.’ ‘Thank you, Geoff. Yes. That makes sense. I will definitely do some of my own research too. I am sure there are so many wonderful ways to get active, and not all super-expensive either.’ Shabaz’s tone is lighter now, inspired */
+
+		position: absolute;
+		width: 793px;
+		height: 702px;
+		top: 10256px;
+
+		/* Desktop_Emph_LrgCopy */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 170%;
+		/* or 51px */
+
+		color: #531a10;
+	}
+
+	#youre-right-brother {
+		/* ‘You’re right, brother, there are so many things you can try. I love to swim now and go climbing. There is a climbing wall at the sports centre. Did you know that, brother? Maybe you could come with us next time. There is nothing to be scared of. With Samantha and Geoff, everything is at the pace you need. You are in control. Everything is how you want it to be. Yes, there are difficult weeks, and there is no quick way to success, but when you have support from friends and family, and mentors, the bad times are balanced by the good times. You could even say that the bad times make the good times feel even better. It’s about having fun, too. The more fun things are, the more you can achieve. I used to climb and swim like a tortoise. Now I am Sherpa Tensing and that American man, the swimmer with all the medals. Honestly, little brother.’ ‘Michael Phelps, Malik?’ Kamila raises an eyebrow, responding to her husband’s unlikely claim. ‘Yes, Mr Michael Phelps, Kamila, my darling. I am Malik Phelps, or Malik Mike Kenny, or Malik Sarah Storey.’ Kamila’s laugh is open and spontaneous, a golden moment in its own right. ‘You could maybe have chosen somebody a little more realistic, Malik.’    */
+
+		position: absolute;
+		width: 794px;
+		height: 739px;
+		top: 11052px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		text-indent: 20px;
+
+		color: #531a10;
+	}
+
+	#group-13 {
+		/* Group 13 */
+
+		position: absolute;
+		width: 671.74px;
+		height: 1186.51px;
+	}
+
+	#b5-map-l1 {
+		/* B5_MAP_L1 */
+
+		position: absolute;
+		width: 545.05px;
+		height: 1146.35px;
+		left: calc(477.94px - 351px);
+		top: 11715.24px;
+
+		background: url(../assets/B5_MAP_L1.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+	#b5-map-l2 {
+		/* B5_MAP_L2 */
+
+		position: absolute;
+		width: 667.41px;
+		height: 1186.51px;
+		left: 0px;
+		top: 11715.24px;
+
+		background: url(../assets/B5_MAP_L2.png) no-repeat center center;
+		background-size: 100% 100%;
+		mix-blend-mode: multiply;
+	}
+	#b5-map-l3 {
+		/* B5_MAP_L3 */
+
+		position: absolute;
+		width: 441.23px;
+		height: 870.73px;
+		left: calc(484.74px - 351px);
+		top: 11827.1px;
+
+		background: url(../assets/B5_MAP_L3.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#yes-perhaps-you {
+		/* ‘Yes, perhaps you are right, my darling.’ Malik accepts a warm samosa from Kamila, before he continues. ‘Still, though, Shabaz. You can see what we all mean. Peer mentoring can open so many doors. That is the important thing to understand. We can all be part of a team. A good team, like Crystal Palace, though, of course, not like that lot you support.’   */
+
+		position: absolute;
+		width: 794px;
+		height: 209px;
+		top: 12932px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		text-indent: 20px;
+
+		color: #531a10;
+	}
+
+	#peer-mentoring-can {
+		position: absolute;
+		width: 793px;
+		height: 161px;
+		top: 13168px;
+
+		/* Desktop_SmlCopy_LrgF */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 133.5%;
+		/* or 47px */
+
+		letter-spacing: 0.02em;
+
+		color: #531a10;
+	}
+
+	#so-shabaz-what {
+		/* ‘So, Shabaz, what do you think?’ Kamila leaves her question open. ‘Okay. Yes. Let’s go for it. No climbing, though. I don’t even like to think about heights. Swimming is a maybe.’ ‘Well, there are things like yoga, zumba, and dance classes, too. We often go dancing at the community centre. Sometimes Malik even manages not to squash my poor toes, don’t you Malik?’ ‘Absolutely, Kamila, my darling, and sometimes Mrs Scary does not tell us off for laughing too much during her classes!’ ‘Of course, there are plenty of less formal things you can do, Shabaz. Just getting out for a regular walk, with a friend, that can make a massive difference. Weight training, too, or, in fact, anything where you work your muscles until they’re ‘tired out, can be great options as well. Brilliant for strength, and overall health. But maybe we could start with athletics. Kamila and Malik tell me you were a regular little Mo Farah at school. A school record-holder right?’ ‘Malik and Kamila are exaggerating a little, I think, Geoff, but, yes, I was fast, before my eyes began to go bad. Athletics? Yes. Yes. Okay. That we can try, but where?’ ‘Samantha can help you there, Shabaz. Her boyfriend is a coach at the athletics club. He can help with access to the track and equipment. Isn’t that right, Samantha?’ ‘Yep. Sure can, Geoff’. Samantha accepts her fellow mentor’s invitation, between bites of bhaji. ‘Sorry. Delicious, these! Yes. He’d be chuffed to help. Make him feel useful, for a change.’ Laughter ripples across the group, gradually increasing in intensity, then subsiding, enough for the party to coordinate their diaries and their phones, set alerts for a week on Friday, and for Kamila to take charge. ‘Well, now that we are all set for a week on Friday, perhaps you would all like some more food, while at least some of it is still warm. Eat up, now, or we will all starve before we even get to the Athletics Club.’ */
+
+		position: absolute;
+		width: 794px;
+		height: 1271px;
+		top: 13373px;
+
+		/* Desktop_Body */
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		/* or 36px */
+
+		text-indent: 20px;
+
+		color: #531a10;
+	}
+
+	#laughter-ripples-across {
+		/* ‘Laughter ripples across the group, gradually increasing in intensity, then subsiding, enough for the party to coordinate their diaries and their phones, set alerts for a week on Friday...’ */
+
+		position: absolute;
+		width: 790px;
+		height: 149px;
+		top: 14734px;
+
+		font-family: PT Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 27px;
+		line-height: 170%;
+		/* or 46px */
+
+		display: flex;
+		align-items: center;
+		text-align: center;
+		letter-spacing: -0.02em;
+
+		color: #531a10;
+	}
+
+	#b1-canopy-l2-bottom {
+		/* B1_Canopy_L2 */
+
+		position: absolute;
+		width: 1480px;
+		height: 712px;
+		left: -35px;
+		top: 15131px;
+
+		background: url(../assets/B1_Canopy_L2.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+
+	#b1-canopy-l3-bottom {
+		/* B1_Canopy_L3 */
+
+		position: absolute;
+		width: 1136px;
+		height: 1958px;
+		left: 358px;
+		top: 14665px;
+
+		background: url(../assets/B1_Canopy_L3.png) no-repeat center center;
+		background-size: 100% 100%;
+		mix-blend-mode: multiply;
+	}
+}
