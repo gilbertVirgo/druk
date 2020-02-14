@@ -2,8 +2,14 @@ $sm: 450px;
 $md: 800px;
 $lg: 1200px;
 
-@mixin media($min: 0) {
+@mixin from($min: 0) {
 	@media screen and (min-width: $min) {
+		@content;
+	}
+}
+
+@mixin to($max) {
+	@media screen and (max-width: $max) {
 		@content;
 	}
 }
@@ -51,25 +57,61 @@ section,
 figure {
 	margin-top: 25px;
 	margin-bottom: 25px;
-	margin-left: auto;
-	margin-right: auto;
 
-	@include media($sm) {
+	@include from($sm) {
 		margin-top: 50px;
 		margin-bottom: 50px;
 	}
 
-	@include media($md) {
+	@include from($md) {
 		margin-top: 70px;
 		margin-bottom: 70px;
 	}
 }
 
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+figure.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 section {
-	max-width: calc(794px + 20px);
+	margin-left: auto;
+	margin-right: auto;
+
+	@include from($sm) {
+		max-width: #{$sm + 20px};
+	}
+	@include from($md) {
+		max-width: #{$md + 20px};
+	}
+	@include from($lg) {
+		max-width: calc(794px + 20px);
+	}
 	width: 100%;
 	padding: 0 10px;
 	box-sizing: border-box;
+
+	&.row {
+		@include to($lg - 1px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@include from($lg) {
+			display: flex;
+			flex-direction: row;
+			max-width: $lg;
+
+			aside {
+				flex: 1;
+			}
+		}
+	}
 }
 
 figure {
@@ -77,11 +119,14 @@ figure {
 
 	//max-width: $sm;
 
-	@include media($sm) {
+	@include from($sm) {
 		max-width: $sm;
 	}
-	@include media($md) {
+	@include from($md) {
 		max-width: $md;
+	}
+	@include from($lg) {
+		max-width: $lg;
 	}
 
 	img {
@@ -93,11 +138,11 @@ figure {
 #group-1 {
 	height: 350px;
 
-	@include media($sm) {
+	@include from($sm) {
 		height: 700px;
 	}
 
-	@include media($md) {
+	@include from($md) {
 		height: 1050px;
 	}
 
@@ -127,11 +172,11 @@ figure {
 #group-2 {
 	height: 250px;
 
-	@include media($sm) {
+	@include from($sm) {
 		height: 500px;
 	}
 
-	@include media($md) {
+	@include from($md) {
 		height: 750px;
 	}
 
@@ -161,27 +206,27 @@ figure {
 #group-3 {
 	height: 300px;
 
-	@include media($sm) {
+	@include from($sm) {
 		height: 500px;
 	}
 
-	@include media($md) {
+	@include from($md) {
 		height: 700px;
 	}
 
 	img:nth-child(1) {
 		top: 45%;
-		left: -10%;
+		left: 10%;
 		height: 60%;
 	}
 	img:nth-child(2) {
 		top: 0%;
-		left: -20%;
+		left: 0%;
 		height: 45%;
 	}
 	img:nth-child(3) {
 		top: 25%;
-		left: -5%;
+		left: 15%;
 		height: 55%;
 	}
 	img:nth-child(4) {
@@ -191,7 +236,7 @@ figure {
 	}
 	img:nth-child(5) {
 		top: 55%;
-		left: 15%;
+		left: 35%;
 		height: 35%;
 	}
 	img:nth-child(6) {
@@ -205,11 +250,14 @@ figure {
 #group-4 {
 	height: 600px;
 
-	@include media($sm) {
+	@include to($lg - 1px) {
+	}
+
+	@include from($sm) {
 		height: 700px;
 	}
 
-	@include media($md) {
+	@include from($md) {
 		height: 800px;
 	}
 
@@ -239,27 +287,27 @@ figure {
 #group-5 {
 	height: 600px;
 
-	@include media($sm) {
+	@include from($sm) {
 		height: 700px;
 	}
 
-	@include media($md) {
+	@include from($md) {
 		height: 800px;
 	}
 
 	img:nth-child(1) {
 		top: -15%;
-		left: 15%;
+		left: 35%;
 		height: 130%;
 	}
 	img:nth-child(2) {
 		top: -15%;
-		left: 5%;
+		left: 25%;
 		height: 130%;
 	}
 	img:nth-child(3) {
 		top: -5%;
-		left: 15%;
+		left: 35%;
 		height: 90%;
 	}
 }
@@ -268,11 +316,11 @@ figure {
 #group-6 {
 	height: 300px;
 
-	@include media($sm) {
+	@include from($sm) {
 		height: 400px;
 	}
 
-	@include media($md) {
+	@include from($md) {
 		height: 500px;
 	}
 
