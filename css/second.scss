@@ -21,6 +21,10 @@ body {
 	overflow-x: hidden;
 }
 
+main {
+	overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -33,30 +37,98 @@ p {
 }
 
 h1 {
-	font-size: 112px;
 	line-height: 114%;
+	@include from($md) {
+		font-size: 112px;
+	}
 }
 
 h2 {
-	font-size: 35px;
 	line-height: 170%;
+	@include from($md) {
+		font-size: 35px;
+	}
 }
 
 h3 {
-	font-size: 28px;
 	line-height: 170%;
+	@include from($md) {
+		font-size: 28px;
+	}
 }
 
 p {
 	text-indent: 20px;
-	font-size: 24px;
 	line-height: 150%;
+	font-size: 16px;
+
+	@include from($md) {
+		font-size: 24px;
+	}
+}
+
+header {
+	box-sizing: border-box;
+	padding-top: 192px;
+
+	#background {
+		z-index: -1;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 822px;
+		background-color: #eabab1;
+
+		@include from($md) {
+			height: 2000px;
+		}
+	}
+
+	#title,
+	#authors p {
+		color: #fff;
+	}
+
+	#title {
+		position: relative;
+		font-size: 42px;
+		line-height: 114%;
+		font-weight: normal;
+		text-align: center;
+
+		@include from($md) {
+			font-size: 112px;
+		}
+	}
+
+	#authors {
+		margin-top: 25px;
+		margin-bottom: 166px;
+
+		@include from($md) {
+			margin-top: 55px;
+			margin-bottom: 438px;
+		}
+		position: relative;
+
+		p {
+			margin-top: 0;
+			margin-bottom: 10px;
+			text-indent: 0;
+			text-align: center;
+
+			@include to($sm) {
+				font-size: 14px;
+			}
+		}
+	}
 }
 
 section,
 figure {
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 
 	@include from($sm) {
 		margin-top: 50px;
@@ -64,8 +136,8 @@ figure {
 	}
 
 	@include from($md) {
-		margin-top: 70px;
-		margin-bottom: 70px;
+		margin-top: 100px;
+		margin-bottom: 100px;
 	}
 }
 
@@ -80,20 +152,22 @@ figure.center {
 }
 
 section {
+	$padding: 25px;
+
 	margin-left: auto;
 	margin-right: auto;
 
 	@include from($sm) {
-		max-width: #{$sm + 20px};
+		max-width: #{$sm + ($padding * 2)};
 	}
 	@include from($md) {
-		max-width: #{$md + 20px};
+		max-width: #{$md + ($padding * 2)};
 	}
 	@include from($lg) {
-		max-width: calc(794px + 20px);
+		max-width: calc(794px + ($padding * 2));
 	}
 	width: 100%;
-	padding: 0 10px;
+	padding: 0 $padding;
 	box-sizing: border-box;
 
 	&.row {
@@ -102,10 +176,24 @@ section {
 			margin-right: auto;
 		}
 
+		&.all {
+			display: flex;
+			flex-direction: row;
+			max-width: $lg;
+			align-items: center;
+			justify-content: center;
+
+			aside {
+				flex: 1;
+			}
+		}
+
 		@include from($lg) {
 			display: flex;
 			flex-direction: row;
 			max-width: $lg;
+			align-items: center;
+			justify-content: center;
 
 			aside {
 				flex: 1;
@@ -136,7 +224,8 @@ figure {
 
 // canopy
 #group-1 {
-	height: 350px;
+	top: -50px;
+	height: 300px;
 
 	@include from($sm) {
 		height: 700px;
@@ -285,35 +374,38 @@ figure {
 
 // map
 #group-5 {
-	height: 600px;
+	height: 400px;
 
 	@include from($sm) {
 		height: 700px;
 	}
 
 	@include from($md) {
+		left: 10%;
 		height: 800px;
 	}
 
 	img:nth-child(1) {
 		top: -15%;
-		left: 35%;
+		left: 20%;
 		height: 130%;
 	}
 	img:nth-child(2) {
 		top: -15%;
-		left: 25%;
+		left: 10%;
 		height: 130%;
 	}
 	img:nth-child(3) {
 		top: -5%;
-		left: 35%;
+		left: 20%;
 		height: 90%;
 	}
 }
 
 // footer
 #group-6 {
+	margin-top: 100px;
+
 	height: 300px;
 
 	@include from($sm) {
@@ -333,6 +425,66 @@ figure {
 		top: -80%;
 		left: -15%;
 		width: 160%;
+	}
+}
+
+#give-way {
+	#sm,
+	#md {
+		display: none;
+	}
+	@include to($md - 1px) {
+		#sm {
+			display: block;
+		}
+	}
+	@include from($md) {
+		#md {
+			display: block;
+		}
+	}
+
+	& + aside[role="right"] {
+		@include from($md) {
+			padding-left: 50px;
+			box-sizing: border-box;
+		}
+	}
+}
+
+#lost-weight {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	h3 {
+		position: relative;
+		left: -20%;
+	}
+
+	img {
+		position: absolute;
+		z-index: -1;
+		top: 0px;
+		left: 30%;
+		width: 150px;
+
+		@include from($md) {
+			width: auto;
+		}
+	}
+}
+
+#certainly-is {
+	flex: 4;
+}
+
+#pink-strip {
+	@include to($md) {
+		height: 761px;
+		margin-left: -45%;
+		margin-right: -20%;
 	}
 }
 

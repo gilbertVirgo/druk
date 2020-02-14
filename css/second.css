@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -17,30 +21,104 @@ p {
 }
 
 h1 {
-  font-size: 112px;
   line-height: 114%;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 112px;
+  }
 }
 
 h2 {
-  font-size: 35px;
   line-height: 170%;
+}
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 35px;
+  }
 }
 
 h3 {
-  font-size: 28px;
   line-height: 170%;
+}
+@media screen and (min-width: 800px) {
+  h3 {
+    font-size: 28px;
+  }
 }
 
 p {
   text-indent: 20px;
-  font-size: 24px;
   line-height: 150%;
+  font-size: 16px;
+}
+@media screen and (min-width: 800px) {
+  p {
+    font-size: 24px;
+  }
+}
+
+header {
+  box-sizing: border-box;
+  padding-top: 192px;
+}
+header #background {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 822px;
+  background-color: #eabab1;
+}
+@media screen and (min-width: 800px) {
+  header #background {
+    height: 2000px;
+  }
+}
+header #title,
+header #authors p {
+  color: #fff;
+}
+header #title {
+  position: relative;
+  font-size: 42px;
+  line-height: 114%;
+  font-weight: normal;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  header #title {
+    font-size: 112px;
+  }
+}
+header #authors {
+  margin-top: 25px;
+  margin-bottom: 166px;
+  position: relative;
+}
+@media screen and (min-width: 800px) {
+  header #authors {
+    margin-top: 55px;
+    margin-bottom: 438px;
+  }
+}
+header #authors p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-indent: 0;
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  header #authors p {
+    font-size: 14px;
+  }
 }
 
 section,
 figure {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 450px) {
   section,
@@ -52,8 +130,8 @@ figure {
 @media screen and (min-width: 800px) {
   section,
 figure {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }
 
@@ -71,22 +149,22 @@ section {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 25px;
   box-sizing: border-box;
 }
 @media screen and (min-width: 450px) {
   section {
-    max-width: 470px;
+    max-width: 500px;
   }
 }
 @media screen and (min-width: 800px) {
   section {
-    max-width: 820px;
+    max-width: 850px;
   }
 }
 @media screen and (min-width: 1200px) {
   section {
-    max-width: calc(794px + 20px);
+    max-width: calc(794px + ($padding * 2));
   }
 }
 @media screen and (max-width: 1199px) {
@@ -95,11 +173,23 @@ section {
     margin-right: auto;
   }
 }
+section.row.all {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+}
+section.row.all aside {
+  flex: 1;
+}
 @media screen and (min-width: 1200px) {
   section.row {
     display: flex;
     flex-direction: row;
     max-width: 1200px;
+    align-items: center;
+    justify-content: center;
   }
   section.row aside {
     flex: 1;
@@ -129,7 +219,8 @@ figure img {
 }
 
 #group-1 {
-  height: 350px;
+  top: -50px;
+  height: 300px;
 }
 @media screen and (min-width: 450px) {
   #group-1 {
@@ -275,7 +366,7 @@ figure img {
 }
 
 #group-5 {
-  height: 600px;
+  height: 400px;
 }
 @media screen and (min-width: 450px) {
   #group-5 {
@@ -284,26 +375,28 @@ figure img {
 }
 @media screen and (min-width: 800px) {
   #group-5 {
+    left: 10%;
     height: 800px;
   }
 }
 #group-5 img:nth-child(1) {
   top: -15%;
-  left: 35%;
+  left: 20%;
   height: 130%;
 }
 #group-5 img:nth-child(2) {
   top: -15%;
-  left: 25%;
+  left: 10%;
   height: 130%;
 }
 #group-5 img:nth-child(3) {
   top: -5%;
-  left: 35%;
+  left: 20%;
   height: 90%;
 }
 
 #group-6 {
+  margin-top: 100px;
   height: 300px;
 }
 @media screen and (min-width: 450px) {
@@ -325,6 +418,62 @@ figure img {
   top: -80%;
   left: -15%;
   width: 160%;
+}
+
+#give-way #sm,
+#give-way #md {
+  display: none;
+}
+@media screen and (max-width: 799px) {
+  #give-way #sm {
+    display: block;
+  }
+}
+@media screen and (min-width: 800px) {
+  #give-way #md {
+    display: block;
+  }
+}
+@media screen and (min-width: 800px) {
+  #give-way + aside[role=right] {
+    padding-left: 50px;
+    box-sizing: border-box;
+  }
+}
+
+#lost-weight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#lost-weight h3 {
+  position: relative;
+  left: -20%;
+}
+#lost-weight img {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 30%;
+  width: 150px;
+}
+@media screen and (min-width: 800px) {
+  #lost-weight img {
+    width: auto;
+  }
+}
+
+#certainly-is {
+  flex: 4;
+}
+
+@media screen and (max-width: 800px) {
+  #pink-strip {
+    height: 761px;
+    margin-left: -45%;
+    margin-right: -20%;
+  }
 }
 
 /*# sourceMappingURL=second.css.map */
