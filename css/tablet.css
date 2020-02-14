@@ -95,9 +95,6 @@
 		color: #ffffff;
 	}
 
-	#group-900 {
-	}
-
 	#b1-canopy-l1 {
 		/* B1_Canopy_L1 */
 
@@ -106,8 +103,6 @@
 		height: 154px;
 		left: 24px;
 		top: 578px;
-
-		background: url(../assets/B1_Canopy_L1.png);
 	}
 
 	#b1-canopy-l2 {

@@ -117,9 +117,6 @@
 		height: 735px;
 		left: 71px;
 		top: 1078px;
-
-		background: url(../assets/B1_Canopy_L1.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#b1-canopy-l2 {
@@ -128,9 +125,6 @@
 		height: 712px;
 		left: -62px;
 		top: 1581px;
-
-		background: url(../assets/B1_Canopy_L2.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#b1-canopy-l3 {
@@ -142,8 +136,6 @@
 		left: 508px;
 		top: 849px;
 
-		background: url(../assets/B1_Canopy_L3.png) no-repeat center center;
-		background-size: 100% 100%;
 		mix-blend-mode: multiply;
 	}
 
@@ -155,9 +147,6 @@
 		height: 1120px;
 		left: 227px;
 		top: 1270px;
-
-		background: url(../assets/B1_Canopy_L4.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#group-4 {
@@ -198,9 +187,6 @@
 		height: 693px;
 		left: -1px;
 		top: 2784px;
-
-		background: url(../assets/B2_buffet_L1.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#b2-buffet-l2 {
@@ -211,9 +197,6 @@
 		height: 895px;
 		left: 17px;
 		top: 2613px;
-
-		background: url(../assets/B2_buffet_L2.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#group-6 {
@@ -232,9 +215,6 @@
 		height: 341.22px;
 		left: 0.8px;
 		top: 2908.54px;
-
-		background: url(../assets/B2_buffet_L3.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#b2-buffet-l4 {
@@ -245,9 +225,6 @@
 		height: 628.36px;
 		left: -2px;
 		top: 2878.24px;
-
-		background: url(../assets/B2_buffet_L4.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#frame-10 {
@@ -438,9 +415,6 @@
 		height: 292.69px;
 		left: 380.63px;
 		top: 4945.22px;
-
-		background: url(../assets/B3_HANDS_L1.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#b3-hands-l2 {
@@ -451,9 +425,6 @@
 		height: 235.73px;
 		left: 331.52px;
 		top: 4732.58px;
-
-		background: url(../assets/B3_HANDS_L2.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#b3-hands-l3 {
@@ -464,9 +435,6 @@
 		height: 285px;
 		left: 415px;
 		top: 4863px;
-
-		background: url(../assets/B3_HANDS_L3.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#b3-hands-l4 {
@@ -477,9 +445,6 @@
 		height: 215px;
 		left: 738px;
 		top: 4704px;
-
-		background: url(../assets/B3_HANDS_L4.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#b3-hands-l5 {
@@ -490,9 +455,6 @@
 		height: 202px;
 		left: 518px;
 		top: 4959px;
-
-		background: url(../assets/B3_HANDS_L5.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#b3-hands-l6 {
@@ -503,9 +465,6 @@
 		height: 240px;
 		left: 749px;
 		top: 4777px;
-
-		background: url(../assets/B3_HANDS_L6.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#yes-yes-please {
@@ -635,8 +594,6 @@
 		z-index: -1;
 
 		mix-blend-mode: normal;
-		background: url(../assets/Pink_Strip.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#well-you-have {
@@ -751,9 +708,6 @@
 		height: 1134.57px;
 		left: 13.82px;
 		top: 8482.96px;
-
-		background: url(../assets/B4_POOL_L1.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#b4-pool-l2 {
@@ -765,8 +719,6 @@
 		left: -37px;
 		top: 8485px;
 
-		background: url(../assets/B4_POOL_L2.png) no-repeat center center;
-		background-size: 100% 100%;
 		mix-blend-mode: multiply;
 	}
 	#b4-pool-l3 {
@@ -777,9 +729,6 @@
 		height: 654px;
 		left: 255px;
 		top: 8803px;
-
-		background: url(../assets/B4_POOL_L3.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 	#b4-pool-l4 {
 		/* B4_POOL_L4 */
@@ -789,9 +738,6 @@
 		height: 1135px;
 		left: 16px;
 		top: 8485px;
-
-		background: url(../assets/B4_POOL_L4.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#which-is-where {
@@ -824,9 +770,6 @@
 		height: 761.58px;
 		margin-right: 360px;
 		top: 10220.2px;
-
-		background: url(../assets/Pink_Strip_Lrg.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#certainly-is-adds {
@@ -887,9 +830,6 @@
 		height: 1146.35px;
 		left: calc(477.94px - 351px);
 		top: 11715.24px;
-
-		background: url(../assets/B5_MAP_L1.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 	#b5-map-l2 {
 		/* B5_MAP_L2 */
@@ -900,8 +840,6 @@
 		left: 0px;
 		top: 11715.24px;
 
-		background: url(../assets/B5_MAP_L2.png) no-repeat center center;
-		background-size: 100% 100%;
 		mix-blend-mode: multiply;
 	}
 	#b5-map-l3 {
@@ -912,9 +850,6 @@
 		height: 870.73px;
 		left: calc(484.74px - 351px);
 		top: 11827.1px;
-
-		background: url(../assets/B5_MAP_L3.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#yes-perhaps-you {
@@ -1012,9 +947,6 @@
 		height: 712px;
 		left: -35px;
 		top: 15131px;
-
-		background: url(../assets/B1_Canopy_L2.png) no-repeat center center;
-		background-size: 100% 100%;
 	}
 
 	#b1-canopy-l3-bottom {
@@ -1026,8 +958,6 @@
 		left: 358px;
 		top: 14665px;
 
-		background: url(../assets/B1_Canopy_L3.png) no-repeat center center;
-		background-size: 100% 100%;
 		mix-blend-mode: multiply;
 	}
 }
