@@ -1,0 +1,220 @@
+@import "../../mixins.scss";
+@import "../../base.scss";
+
+html,
+body {
+	color: #531a10;
+}
+
+main {
+	overflow: hidden;
+}
+
+header #background {
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 822px;
+	background-color: #eabab1;
+
+	@include from($md) {
+		height: 2000px;
+	}
+}
+
+figure {
+	margin: 0;
+	position: relative;
+	width: 100%;
+
+	&.center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img:not(:first-child) {
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+	}
+
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+
+		&:first-child {
+			position: relative;
+		}
+	}
+}
+
+// canopy
+#group-1 {
+	width: 100%;
+}
+
+// buffet
+#group-2 {
+	max-width: 700px;
+}
+
+// hands
+#group-3 {
+	width: 100%;
+}
+
+// pool
+#group-4 {
+	margin-left: auto;
+	margin-right: auto;
+
+	@include to($lg - 1px) {
+		max-width: 45vh;
+	}
+	@include from($lg) {
+		max-width: 30vw;
+	}
+}
+
+#group-4-text {
+	@include to($lg - 1px) {
+		margin-top: 100px;
+	}
+
+	@include from($lg) {
+		padding-right: 15%;
+	}
+}
+
+// map
+#group-5 {
+	img {
+		width: auto;
+		max-height: 800px;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+// footer
+#group-6 {
+	margin-top: 100px;
+
+	height: 300px;
+
+	@include from($sm) {
+		height: 400px;
+	}
+
+	@include from($md) {
+		height: 500px;
+	}
+
+	img:nth-child(1) {
+		top: 0%;
+		left: 0;
+		width: 200%;
+	}
+	img:nth-child(2) {
+		left: 0;
+		mix-blend-mode: multiply;
+	}
+}
+
+#give-way {
+	#sm,
+	#md {
+		display: none;
+	}
+	@include to($md - 1px) {
+		#sm {
+			display: block;
+		}
+	}
+	@include from($md) {
+		#md {
+			display: block;
+		}
+	}
+
+	& + aside[role="right"] {
+		@include from($md) {
+			padding-left: 50px;
+			box-sizing: border-box;
+		}
+	}
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#lost-weight {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+	h3 {
+		position: relative;
+		left: -20%;
+		z-index: 0;
+	}
+
+	img {
+		position: absolute;
+		z-index: -1;
+
+		top: 20px;
+		left: 190px;
+
+		@include from($md) {
+			top: 10%;
+			left: 60%;
+			width: 300px;
+		}
+
+		@include from($lg) {
+			width: auto;
+			top: 40%;
+			left: 55%;
+			width: 220px;
+		}
+	}
+}
+
+#certainly-is {
+	flex: 4;
+}
+
+#pink-strip {
+	@include to($sm - 1px) {
+		margin-left: -45%;
+	}
+	@include from($sm) {
+		left: -10%;
+	}
+	@include to($md) {
+		height: 761px;
+		position: relative;
+		margin-right: -20%;
+	}
+}
+
+// This is what we have to work with
+// Hope to move away from the first idea (using absolute positioning)
+// on to this new one which actually preserves the layout and which
+// will work responsively.
+
+// Note that these groups will need to be aligned differently for
+// different breakpoints.
+
+// If you come and are confused... just pray. Dude...

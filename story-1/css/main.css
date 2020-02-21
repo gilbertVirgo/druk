@@ -1,12 +1,8 @@
 html,
 body {
-  margin: 0;
-  width: 100%;
   overflow-x: hidden;
-}
-
-main {
-  overflow: hidden;
+  width: 100%;
+  margin: 0;
 }
 
 h1,
@@ -17,7 +13,6 @@ h5,
 h6,
 p {
   font-family: "PT Serif", Times, serif;
-  color: #531a10;
 }
 
 h1 {
@@ -78,7 +73,7 @@ header #background {
 }
 header #title,
 header #authors p {
-  color: #fff;
+  color: inherit;
 }
 header #title {
   position: relative;
@@ -99,8 +94,12 @@ header #authors {
 }
 @media screen and (min-width: 800px) {
   header #authors {
-    margin-top: 55px;
-    margin-bottom: 438px;
+    margin: 55px auto 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    margin-left: auto;
   }
 }
 header #authors p {
@@ -117,22 +116,27 @@ header #authors p {
 
 section,
 figure {
-  margin-top: 40px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 450px) {
   section,
 figure {
-    margin-top: 50px;
     margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 800px) {
   section,
 figure {
-    margin-top: 100px;
     margin-bottom: 100px;
   }
+}
+section.no-top,
+figure.no-top {
+  margin-bottom: 0;
+}
+section.no-bottom,
+figure.no-bottom {
+  margin-bottom: 0;
 }
 
 figure {
@@ -153,45 +157,67 @@ section {
   box-sizing: border-box;
 }
 @media screen and (min-width: 450px) {
-  section {
+  section:not(.couple) {
     max-width: 500px;
   }
 }
 @media screen and (min-width: 800px) {
-  section {
+  section:not(.couple) {
     max-width: 850px;
   }
 }
 @media screen and (min-width: 1200px) {
-  section {
+  section:not(.couple) {
     max-width: calc(794px + ($padding * 2));
   }
 }
 @media screen and (max-width: 1199px) {
-  section.row {
+  section.couple {
     margin-left: auto;
     margin-right: auto;
   }
 }
-section.row.all {
+section.couple.no-constraints {
+  max-width: none !important;
+}
+section.couple.all {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
   align-items: center;
   justify-content: center;
 }
-section.row.all aside {
+section.couple.all aside {
   flex: 1;
 }
+section.couple .dom {
+  flex: 2;
+}
+@media screen and (min-width: 450px) {
+  section.couple {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 800px) {
+  section.couple {
+    max-width: 800px;
+  }
+}
 @media screen and (min-width: 1200px) {
-  section.row {
+  section.couple {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.couple {
     display: flex;
     flex-direction: row;
-    max-width: 1200px;
     align-items: center;
     justify-content: center;
   }
-  section.row aside {
+  section.couple div {
+    flex: 1;
+  }
+  section.couple aside {
     flex: 1;
   }
 }
@@ -199,200 +225,104 @@ section.row.all aside {
 figure {
   position: relative;
 }
-@media screen and (min-width: 450px) {
-  figure {
-    max-width: 450px;
-  }
-}
-@media screen and (min-width: 800px) {
-  figure {
-    max-width: 800px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  figure {
-    max-width: 1200px;
-  }
-}
 figure img {
   position: absolute;
 }
 
-#group-1 {
-  top: -50px;
-  height: 300px;
+html,
+body {
+  color: #531a10;
 }
-@media screen and (min-width: 450px) {
-  #group-1 {
-    height: 700px;
-  }
+
+main {
+  overflow: hidden;
+}
+
+header #background {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 822px;
+  background-color: #eabab1;
 }
 @media screen and (min-width: 800px) {
-  #group-1 {
-    height: 1050px;
+  header #background {
+    height: 2000px;
   }
 }
-#group-1 img:nth-child(1) {
-  left: 10%;
-  top: 0%;
-  height: 60%;
+
+figure {
+  margin: 0;
+  position: relative;
+  width: 100%;
 }
-#group-1 img:nth-child(2) {
-  left: -5%;
-  top: 40%;
-  height: 60%;
+figure.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#group-1 img:nth-child(3) {
-  left: 40%;
-  top: -40%;
-  height: 160%;
+figure.center img:not(:first-child) {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
-#group-1 img:nth-child(4) {
-  left: 20%;
-  top: 10%;
-  height: 95%;
+figure img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+figure img:first-child {
+  position: relative;
+}
+
+#group-1 {
+  width: 100%;
 }
 
 #group-2 {
-  height: 250px;
-}
-@media screen and (min-width: 450px) {
-  #group-2 {
-    height: 500px;
-  }
-}
-@media screen and (min-width: 800px) {
-  #group-2 {
-    height: 750px;
-  }
-}
-#group-2 img:nth-child(1) {
-  top: 0%;
-  left: 0%;
-  height: 100%;
-}
-#group-2 img:nth-child(2) {
-  top: -30%;
-  left: 0%;
-  height: 130%;
-}
-#group-2 img:nth-child(3) {
-  top: 35%;
-  left: -2%;
-  height: 54%;
-}
-#group-2 img:nth-child(4) {
-  left: -2%;
-  top: 30%;
-  height: 100%;
+  max-width: 700px;
 }
 
 #group-3 {
-  height: 300px;
-}
-@media screen and (min-width: 450px) {
-  #group-3 {
-    height: 500px;
-  }
-}
-@media screen and (min-width: 800px) {
-  #group-3 {
-    height: 700px;
-  }
-}
-#group-3 img:nth-child(1) {
-  top: 45%;
-  left: 10%;
-  height: 60%;
-}
-#group-3 img:nth-child(2) {
-  top: 0%;
-  left: 0%;
-  height: 45%;
-}
-#group-3 img:nth-child(3) {
-  top: 25%;
-  left: 15%;
-  height: 55%;
-}
-#group-3 img:nth-child(4) {
-  top: 0%;
-  left: 50%;
-  height: 35%;
-}
-#group-3 img:nth-child(5) {
-  top: 55%;
-  left: 35%;
-  height: 35%;
-}
-#group-3 img:nth-child(6) {
-  top: 10%;
-  left: 60%;
-  height: 30%;
+  width: 100%;
 }
 
 #group-4 {
-  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media screen and (min-width: 450px) {
+@media screen and (max-width: 1199px) {
   #group-4 {
-    height: 700px;
+    max-width: 45vh;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   #group-4 {
-    height: 800px;
+    max-width: 30vw;
   }
-}
-#group-4 img:nth-child(1) {
-  top: 0%;
-  left: 2%;
-  height: 100%;
-}
-#group-4 img:nth-child(2) {
-  top: 0%;
-  left: -8%;
-  height: 100%;
-}
-#group-4 img:nth-child(3) {
-  top: 35%;
-  left: 15%;
-  height: 60%;
-}
-#group-4 img:nth-child(4) {
-  top: 0%;
-  left: 2%;
-  height: 100%;
 }
 
-#group-5 {
-  height: 400px;
-}
-@media screen and (min-width: 450px) {
-  #group-5 {
-    height: 700px;
+@media screen and (max-width: 1199px) {
+  #group-4-text {
+    margin-top: 100px;
   }
 }
-@media screen and (min-width: 800px) {
-  #group-5 {
-    left: 10%;
-    height: 800px;
+@media screen and (min-width: 1200px) {
+  #group-4-text {
+    padding-right: 15%;
   }
 }
-#group-5 img:nth-child(1) {
-  top: -15%;
-  left: 20%;
-  height: 130%;
-}
-#group-5 img:nth-child(2) {
-  top: -15%;
-  left: 10%;
-  height: 130%;
-}
-#group-5 img:nth-child(3) {
-  top: -5%;
-  left: 20%;
-  height: 90%;
+
+#group-5 img {
+  width: auto;
+  max-height: 800px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #group-6 {
@@ -411,15 +341,19 @@ figure img {
 }
 #group-6 img:nth-child(1) {
   top: 0%;
-  left: -60%;
+  left: 0;
   width: 200%;
 }
 #group-6 img:nth-child(2) {
   top: -80%;
-  left: -15%;
-  width: 160%;
+  left: 0;
+  mix-blend-mode: multiply;
 }
 
+#give-way {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 #give-way #sm,
 #give-way #md {
   display: none;
@@ -446,21 +380,33 @@ figure img {
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 #lost-weight h3 {
   position: relative;
   left: -20%;
+  z-index: 0;
 }
 #lost-weight img {
   position: absolute;
   z-index: -1;
-  top: 0px;
-  left: 30%;
-  width: 150px;
+  top: 20px;
+  left: 190px;
 }
 @media screen and (min-width: 800px) {
   #lost-weight img {
+    top: 10%;
+    left: 60%;
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #lost-weight img {
     width: auto;
+    top: 40%;
+    left: 55%;
+    width: 220px;
   }
 }
 
@@ -468,12 +414,22 @@ figure img {
   flex: 4;
 }
 
+@media screen and (max-width: 449px) {
+  #pink-strip {
+    margin-left: -45%;
+  }
+}
+@media screen and (min-width: 450px) {
+  #pink-strip {
+    left: -10%;
+  }
+}
 @media screen and (max-width: 800px) {
   #pink-strip {
     height: 761px;
-    margin-left: -45%;
+    position: relative;
     margin-right: -20%;
   }
 }
 
-/*# sourceMappingURL=second.css.map */
+/*# sourceMappingURL=main.css.map */

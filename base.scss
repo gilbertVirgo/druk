@@ -1,0 +1,239 @@
+html,
+body {
+	overflow-x: hidden;
+	width: 100%;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: "PT Serif", Times, serif;
+}
+
+h1 {
+	line-height: 114%;
+	@include from($md) {
+		font-size: 112px;
+	}
+}
+
+h2 {
+	line-height: 170%;
+	@include from($md) {
+		font-size: 35px;
+	}
+}
+
+h3 {
+	line-height: 170%;
+	@include from($md) {
+		font-size: 28px;
+	}
+}
+
+p {
+	text-indent: 20px;
+	line-height: 150%;
+	font-size: 16px;
+
+	@include from($md) {
+		font-size: 24px;
+	}
+}
+
+header {
+	box-sizing: border-box;
+	padding-top: 192px;
+
+	#background {
+		z-index: -1;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 822px;
+		background-color: #eabab1;
+
+		@include from($md) {
+			height: 2000px;
+		}
+	}
+
+	#title,
+	#authors p {
+		color: inherit;
+	}
+
+	#title {
+		position: relative;
+		font-size: 42px;
+		line-height: 114%;
+		font-weight: normal;
+		text-align: center;
+
+		@include from($md) {
+			font-size: 112px;
+		}
+	}
+
+	#authors {
+		margin-top: 25px;
+		margin-bottom: 166px;
+
+		@include from($md) {
+			margin: 55px auto 300px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			max-width: $md;
+			margin-left: auto;
+		}
+		position: relative;
+
+		p {
+			margin-top: 0;
+			margin-bottom: 10px;
+			text-indent: 0;
+			text-align: center;
+
+			@include to($sm) {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+section,
+figure {
+	margin-bottom: 40px;
+
+	@include from($sm) {
+		margin-bottom: 50px;
+	}
+
+	@include from($md) {
+		margin-bottom: 100px;
+	}
+
+	&.no-top {
+		margin-bottom: 0;
+	}
+	&.no-bottom {
+		margin-bottom: 0;
+	}
+}
+
+figure {
+	margin: 0;
+	position: relative;
+	width: 100%;
+
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+
+		&:first-child {
+			position: relative;
+		}
+	}
+}
+
+section {
+	$padding: 25px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	&:not(.couple) {
+		@include from($sm) {
+			max-width: #{$sm + ($padding * 2)};
+		}
+		@include from($md) {
+			max-width: #{$md + ($padding * 2)};
+		}
+		@include from($lg) {
+			max-width: calc(794px + ($padding * 2));
+		}
+	}
+	width: 100%;
+	padding: 0 $padding;
+	box-sizing: border-box;
+
+	&.couple {
+		@include to($lg - 1px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&.no-constraints {
+			max-width: none !important;
+		}
+
+		&.all {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+
+			aside {
+				flex: 1;
+			}
+		}
+
+		.dom {
+			flex: 2;
+		}
+
+		@include from($sm) {
+			max-width: $sm;
+		}
+
+		@include from($md) {
+			max-width: $md;
+		}
+
+		@include from($lg) {
+			max-width: $lg;
+		}
+
+		@include from($lg) {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+
+			div {
+				flex: 1;
+			}
+
+			aside {
+				flex: 1;
+			}
+		}
+	}
+}
+
+figure {
+	position: relative;
+
+	@include from($sm) {
+		//max-width: $sm;
+	}
+	@include from($md) {
+		//max-width: $md;
+	}
+	@include from($lg) {
+		//max-width: $lg;
+	}
+
+	img {
+		position: absolute;
+	}
+}

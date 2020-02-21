@@ -1,0 +1,95 @@
+@import "../../mixins.scss";
+@import "../../base.scss";
+
+html,
+body {
+	color: #384d70;
+	background-color: #f5f9f1;
+}
+
+#group-1 {
+}
+#group-2 {
+}
+#group-3 {
+	@include from($md) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+#group-4 {
+}
+#group-5 {
+	@include from($md) {
+		width: 35vw;
+	}
+}
+#loving-the-archery {
+	position: relative;
+
+	@include to($lg) {
+		padding-top: 15%;
+	}
+
+	img {
+		position: absolute;
+
+		left: -50px;
+		top: -60px;
+		width: 250px;
+
+		@include from($lg) {
+			left: -75px;
+			top: -150px;
+			width: 350px;
+			z-index: 0;
+		}
+	}
+}
+#it-does-help {
+	position: relative;
+
+	img {
+		position: absolute;
+
+		@include to($md - 1px) {
+			top: -25%;
+			right: 67%;
+			height: 155px;
+		}
+
+		@include from($md) {
+			right: -15%;
+			top: -80%;
+		}
+	}
+	h2 {
+		margin-left: auto;
+		text-align: right;
+
+		width: 80%;
+
+		@include from($md) {
+			width: 70%;
+		}
+	}
+}
+
+#this-calls-for {
+	h2 {
+		width: 90%;
+	}
+
+	img {
+		width: 300px;
+		position: relative;
+		left: -50px;
+		top: -100px;
+
+		@include from($lg) {
+			position: absolute;
+			top: 35%;
+			left: -20%;
+		}
+	}
+}

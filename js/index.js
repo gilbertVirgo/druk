@@ -1,4 +1,4 @@
-import Rellax from "./rellax/index.js";
+import Rellax from "./rellax/index.js.js";
 
 new Rellax(".rellax", {
 	speed: -2,

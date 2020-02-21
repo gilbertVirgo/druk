@@ -1,18 +1,5 @@
-$sm: 450px;
-$md: 800px;
-$lg: 1200px;
-
-@mixin from($min: 0) {
-	@media screen and (min-width: $min) {
-		@content;
-	}
-}
-
-@mixin to($max) {
-	@media screen and (max-width: $max) {
-		@content;
-	}
-}
+@import "../../mixins.scss";
+@import "../../base.scss";
 
 html,
 body {
@@ -25,103 +12,17 @@ main {
 	overflow: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-	font-family: "PT Serif", Times, serif;
-	color: #531a10;
-}
-
-h1 {
-	line-height: 114%;
-	@include from($md) {
-		font-size: 112px;
-	}
-}
-
-h2 {
-	line-height: 170%;
-	@include from($md) {
-		font-size: 35px;
-	}
-}
-
-h3 {
-	line-height: 170%;
-	@include from($md) {
-		font-size: 28px;
-	}
-}
-
-p {
-	text-indent: 20px;
-	line-height: 150%;
-	font-size: 16px;
+header #background {
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 822px;
+	background-color: #eabab1;
 
 	@include from($md) {
-		font-size: 24px;
-	}
-}
-
-header {
-	box-sizing: border-box;
-	padding-top: 192px;
-
-	#background {
-		z-index: -1;
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 822px;
-		background-color: #eabab1;
-
-		@include from($md) {
-			height: 2000px;
-		}
-	}
-
-	#title,
-	#authors p {
-		color: #fff;
-	}
-
-	#title {
-		position: relative;
-		font-size: 42px;
-		line-height: 114%;
-		font-weight: normal;
-		text-align: center;
-
-		@include from($md) {
-			font-size: 112px;
-		}
-	}
-
-	#authors {
-		margin-top: 25px;
-		margin-bottom: 166px;
-
-		@include from($md) {
-			margin-top: 55px;
-			margin-bottom: 438px;
-		}
-		position: relative;
-
-		p {
-			margin-top: 0;
-			margin-bottom: 10px;
-			text-indent: 0;
-			text-align: center;
-
-			@include to($sm) {
-				font-size: 14px;
-			}
-		}
+		height: 2000px;
 	}
 }
 
@@ -170,7 +71,7 @@ section {
 	padding: 0 $padding;
 	box-sizing: border-box;
 
-	&.row {
+	&.couple {
 		@include to($lg - 1px) {
 			margin-left: auto;
 			margin-right: auto;
@@ -179,13 +80,20 @@ section {
 		&.all {
 			display: flex;
 			flex-direction: row;
-			max-width: $lg;
 			align-items: center;
 			justify-content: center;
 
 			aside {
 				flex: 1;
 			}
+		}
+
+		@include from($sm) {
+			max-width: $sm;
+		}
+
+		@include from($md) {
+			max-width: $md;
 		}
 
 		@include from($lg) {
@@ -481,9 +389,15 @@ figure {
 }
 
 #pink-strip {
+	@include to($sm - 1px) {
+		margin-left: -45%;
+	}
+	@include from($sm) {
+		left: -10%;
+	}
 	@include to($md) {
 		height: 761px;
-		margin-left: -45%;
+		position: relative;
 		margin-right: -20%;
 	}
 }

@@ -1,0 +1,326 @@
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "PT Serif", Times, serif;
+}
+
+h1 {
+  line-height: 114%;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 112px;
+  }
+}
+
+h2 {
+  line-height: 170%;
+}
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+
+h3 {
+  line-height: 170%;
+}
+@media screen and (min-width: 800px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+p {
+  text-indent: 20px;
+  line-height: 150%;
+  font-size: 16px;
+}
+@media screen and (min-width: 800px) {
+  p {
+    font-size: 24px;
+  }
+}
+
+header {
+  box-sizing: border-box;
+  padding-top: 192px;
+}
+header #background {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 822px;
+  background-color: #eabab1;
+}
+@media screen and (min-width: 800px) {
+  header #background {
+    height: 2000px;
+  }
+}
+header #title,
+header #authors p {
+  color: inherit;
+}
+header #title {
+  position: relative;
+  font-size: 42px;
+  line-height: 114%;
+  font-weight: normal;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  header #title {
+    font-size: 112px;
+  }
+}
+header #authors {
+  margin-top: 25px;
+  margin-bottom: 166px;
+  position: relative;
+}
+@media screen and (min-width: 800px) {
+  header #authors {
+    margin: 55px auto 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    margin-left: auto;
+  }
+}
+header #authors p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-indent: 0;
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  header #authors p {
+    font-size: 14px;
+  }
+}
+
+section,
+figure {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 450px) {
+  section,
+figure {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 800px) {
+  section,
+figure {
+    margin-bottom: 100px;
+  }
+}
+section.no-top,
+figure.no-top {
+  margin-bottom: 0;
+}
+section.no-bottom,
+figure.no-bottom {
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+figure img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+figure img:first-child {
+  position: relative;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 450px) {
+  section:not(.couple) {
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 800px) {
+  section:not(.couple) {
+    max-width: 850px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section:not(.couple) {
+    max-width: calc(794px + ($padding * 2));
+  }
+}
+@media screen and (max-width: 1199px) {
+  section.couple {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+section.couple.no-constraints {
+  max-width: none !important;
+}
+section.couple.all {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+section.couple.all aside {
+  flex: 1;
+}
+section.couple .dom {
+  flex: 2;
+}
+@media screen and (min-width: 450px) {
+  section.couple {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 800px) {
+  section.couple {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.couple {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.couple {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  section.couple div {
+    flex: 1;
+  }
+  section.couple aside {
+    flex: 1;
+  }
+}
+
+figure {
+  position: relative;
+}
+figure img {
+  position: absolute;
+}
+
+html,
+body {
+  color: #384d70;
+  background-color: #f5f9f1;
+}
+
+@media screen and (min-width: 800px) {
+  #group-3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #group-5 {
+    width: 35vw;
+  }
+}
+
+#loving-the-archery {
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  #loving-the-archery {
+    padding-top: 15%;
+  }
+}
+#loving-the-archery img {
+  position: absolute;
+  left: -50px;
+  top: -60px;
+  width: 250px;
+}
+@media screen and (min-width: 1200px) {
+  #loving-the-archery img {
+    left: -75px;
+    top: -150px;
+    width: 350px;
+    z-index: 0;
+  }
+}
+
+#it-does-help {
+  position: relative;
+}
+#it-does-help img {
+  position: absolute;
+}
+@media screen and (max-width: 799px) {
+  #it-does-help img {
+    top: -25%;
+    right: 67%;
+    height: 155px;
+  }
+}
+@media screen and (min-width: 800px) {
+  #it-does-help img {
+    right: -15%;
+    top: -80%;
+  }
+}
+#it-does-help h2 {
+  margin-left: auto;
+  text-align: right;
+  width: 80%;
+}
+@media screen and (min-width: 800px) {
+  #it-does-help h2 {
+    width: 70%;
+  }
+}
+
+#this-calls-for h2 {
+  width: 90%;
+}
+#this-calls-for img {
+  width: 300px;
+  position: relative;
+  left: -50px;
+  top: -100px;
+}
+@media screen and (min-width: 1200px) {
+  #this-calls-for img {
+    position: absolute;
+    top: 35%;
+    left: -20%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
