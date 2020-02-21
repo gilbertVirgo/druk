@@ -116,27 +116,21 @@ header #authors p {
 
 section,
 figure {
-  margin-bottom: 40px;
-}
-@media screen and (min-width: 450px) {
-  section,
-figure {
-    margin-bottom: 50px;
-  }
-}
-@media screen and (min-width: 800px) {
-  section,
-figure {
-    margin-bottom: 100px;
-  }
+  margin-bottom: 100px;
 }
 section.no-top,
 figure.no-top {
-  margin-bottom: 0;
+  margin-top: 0;
 }
 section.no-bottom,
 figure.no-bottom {
   margin-bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+  section.no-bottom-desktop,
+figure.no-bottom-desktop {
+    margin-bottom: 0;
+  }
 }
 
 figure {
@@ -162,21 +156,16 @@ section {
   box-sizing: border-box;
 }
 @media screen and (min-width: 450px) {
-  section:not(.couple) {
-    max-width: 500px;
+  section {
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 800px) {
-  section:not(.couple) {
-    max-width: 850px;
+  section {
+    max-width: 794px;
   }
 }
-@media screen and (min-width: 1200px) {
-  section:not(.couple) {
-    max-width: calc(794px + ($padding * 2));
-  }
-}
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 799px) {
   section.couple {
     margin-left: auto;
     margin-right: auto;
@@ -197,22 +186,7 @@ section.couple.all aside {
 section.couple .dom {
   flex: 2;
 }
-@media screen and (min-width: 450px) {
-  section.couple {
-    max-width: 450px;
-  }
-}
 @media screen and (min-width: 800px) {
-  section.couple {
-    max-width: 800px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  section.couple {
-    max-width: 1200px;
-  }
-}
-@media screen and (min-width: 1200px) {
   section.couple {
     display: flex;
     flex-direction: row;
@@ -247,9 +221,30 @@ body {
   }
 }
 
+#group-5 {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 799px) {
+  #group-5 {
+    max-width: 45vh;
+  }
+}
 @media screen and (min-width: 800px) {
   #group-5 {
-    width: 35vw;
+    overflow: visible;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  #group-5 img {
+    left: calc(-40px - 45%);
+    width: 145%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #group-5 img {
+    left: calc(-40px - 65%);
+    width: 165%;
   }
 }
 
@@ -291,7 +286,7 @@ body {
 }
 @media screen and (min-width: 800px) {
   #it-does-help img {
-    right: -15%;
+    right: -25%;
     top: -80%;
   }
 }
