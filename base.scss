@@ -110,21 +110,18 @@ header {
 
 section,
 figure {
-	margin-bottom: 40px;
-
-	@include from($sm) {
-		margin-bottom: 50px;
-	}
-
-	@include from($md) {
-		margin-bottom: 100px;
-	}
+	margin-bottom: 100px;
 
 	&.no-top {
-		margin-bottom: 0;
+		margin-top: 0;
 	}
 	&.no-bottom {
 		margin-bottom: 0;
+	}
+	&.no-bottom-desktop {
+		@include from($lg) {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -146,28 +143,22 @@ figure {
 }
 
 section {
-	$padding: 25px;
-
 	margin-left: auto;
 	margin-right: auto;
-
-	&:not(.couple) {
-		@include from($sm) {
-			max-width: #{$sm + ($padding * 2)};
-		}
-		@include from($md) {
-			max-width: #{$md + ($padding * 2)};
-		}
-		@include from($lg) {
-			max-width: calc(794px + ($padding * 2));
-		}
-	}
 	width: 100%;
-	padding: 0 $padding;
+	padding: 0 25px;
 	box-sizing: border-box;
 
+	@include from($sm) {
+		max-width: $sm;
+	}
+
+	@include from($md) {
+		max-width: 794px;
+	}
+
 	&.couple {
-		@include to($lg - 1px) {
+		@include to($md - 1px) {
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -191,19 +182,7 @@ section {
 			flex: 2;
 		}
 
-		@include from($sm) {
-			max-width: $sm;
-		}
-
 		@include from($md) {
-			max-width: $md;
-		}
-
-		@include from($lg) {
-			max-width: $lg;
-		}
-
-		@include from($lg) {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -222,16 +201,6 @@ section {
 
 figure {
 	position: relative;
-
-	@include from($sm) {
-		//max-width: $sm;
-	}
-	@include from($md) {
-		//max-width: $md;
-	}
-	@include from($lg) {
-		//max-width: $lg;
-	}
 
 	img {
 		position: absolute;

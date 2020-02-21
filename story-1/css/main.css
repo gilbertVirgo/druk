@@ -116,37 +116,36 @@ header #authors p {
 
 section,
 figure {
-  margin-bottom: 40px;
-}
-@media screen and (min-width: 450px) {
-  section,
-figure {
-    margin-bottom: 50px;
-  }
-}
-@media screen and (min-width: 800px) {
-  section,
-figure {
-    margin-bottom: 100px;
-  }
+  margin-bottom: 100px;
 }
 section.no-top,
 figure.no-top {
-  margin-bottom: 0;
+  margin-top: 0;
 }
 section.no-bottom,
 figure.no-bottom {
   margin-bottom: 0;
 }
-
-figure {
-  margin-left: 0;
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  section.no-bottom-desktop,
+figure.no-bottom-desktop {
+    margin-bottom: 0;
+  }
 }
 
-figure.center {
-  margin-left: auto;
-  margin-right: auto;
+figure {
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+figure img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+figure img:first-child {
+  position: relative;
 }
 
 section {
@@ -157,21 +156,16 @@ section {
   box-sizing: border-box;
 }
 @media screen and (min-width: 450px) {
-  section:not(.couple) {
-    max-width: 500px;
+  section {
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 800px) {
-  section:not(.couple) {
-    max-width: 850px;
+  section {
+    max-width: 794px;
   }
 }
-@media screen and (min-width: 1200px) {
-  section:not(.couple) {
-    max-width: calc(794px + ($padding * 2));
-  }
-}
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 799px) {
   section.couple {
     margin-left: auto;
     margin-right: auto;
@@ -192,22 +186,7 @@ section.couple.all aside {
 section.couple .dom {
   flex: 2;
 }
-@media screen and (min-width: 450px) {
-  section.couple {
-    max-width: 450px;
-  }
-}
 @media screen and (min-width: 800px) {
-  section.couple {
-    max-width: 800px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  section.couple {
-    max-width: 1200px;
-  }
-}
-@media screen and (min-width: 1200px) {
   section.couple {
     display: flex;
     flex-direction: row;
@@ -246,6 +225,7 @@ header #background {
   width: 100%;
   height: 822px;
   background-color: #eabab1;
+  background: linear-gradient(180deg, #eabab1 0%, #eabab1 98%, rgba(234, 186, 177, 0) 100%);
 }
 @media screen and (min-width: 800px) {
   header #background {
@@ -294,28 +274,34 @@ figure img:first-child {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 799px) {
   #group-4 {
     max-width: 45vh;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   #group-4 {
-    max-width: 30vw;
+    overflow: visible;
   }
 }
-
-@media screen and (max-width: 1199px) {
-  #group-4-text {
-    margin-top: 100px;
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  #group-4 img {
+    left: calc(-40px - 45%);
+    width: 145%;
   }
 }
 @media screen and (min-width: 1200px) {
-  #group-4-text {
-    padding-right: 15%;
+  #group-4 img {
+    left: calc(-40px - 65%);
+    width: 165%;
   }
 }
 
+@media screen and (max-width: 800px) {
+  #group-5 {
+    max-width: 90vw;
+  }
+}
 #group-5 img {
   width: auto;
   max-height: 800px;
@@ -325,34 +311,9 @@ figure img:first-child {
   margin-right: auto;
 }
 
-#group-6 {
-  margin-top: 100px;
-  height: 300px;
-}
-@media screen and (min-width: 450px) {
-  #group-6 {
-    height: 400px;
-  }
-}
-@media screen and (min-width: 800px) {
-  #group-6 {
-    height: 500px;
-  }
-}
-#group-6 img:nth-child(1) {
-  top: 0%;
-  left: 0;
-  width: 200%;
-}
-#group-6 img:nth-child(2) {
-  top: -80%;
-  left: 0;
-  mix-blend-mode: multiply;
-}
-
 #give-way {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #give-way #sm,
 #give-way #md {
@@ -368,10 +329,19 @@ figure img:first-child {
     display: block;
   }
 }
+@media screen and (max-width: 799px) {
+  #give-way {
+    max-width: 45vh;
+  }
+}
 @media screen and (min-width: 800px) {
-  #give-way + aside[role=right] {
-    padding-left: 50px;
-    box-sizing: border-box;
+  #give-way {
+    overflow: visible;
+  }
+  #give-way img {
+    left: calc(-40px - 45%);
+    width: 145%;
+    position: relative;
   }
 }
 
@@ -401,7 +371,7 @@ figure img:first-child {
     width: 300px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   #lost-weight img {
     width: auto;
     top: 40%;
@@ -410,25 +380,9 @@ figure img:first-child {
   }
 }
 
-#certainly-is {
-  flex: 4;
-}
-
-@media screen and (max-width: 449px) {
-  #pink-strip {
-    margin-left: -45%;
-  }
-}
-@media screen and (min-width: 450px) {
-  #pink-strip {
-    left: -10%;
-  }
-}
 @media screen and (max-width: 800px) {
-  #pink-strip {
-    height: 761px;
-    position: relative;
-    margin-right: -20%;
+  #group-4-text {
+    margin-top: 100px;
   }
 }
 

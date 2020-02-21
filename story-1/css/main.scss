@@ -18,6 +18,12 @@ header #background {
 	width: 100%;
 	height: 822px;
 	background-color: #eabab1;
+	background: linear-gradient(
+		180deg,
+		#eabab1 0%,
+		#eabab1 98%,
+		rgba(234, 186, 177, 0) 100%
+	);
 
 	@include from($md) {
 		height: 2000px;
@@ -73,26 +79,32 @@ figure {
 	margin-left: auto;
 	margin-right: auto;
 
-	@include to($lg - 1px) {
+	@include to($md - 1px) {
 		max-width: 45vh;
 	}
-	@include from($lg) {
-		max-width: 30vw;
+	@include from($md) {
+		overflow: visible;
 	}
-}
-
-#group-4-text {
-	@include to($lg - 1px) {
-		margin-top: 100px;
+	@media screen and (min-width: $md) and (max-width: $lg) {
+		img {
+			left: calc(-40px - 45%);
+			width: 145%;
+		}
 	}
-
 	@include from($lg) {
-		padding-right: 15%;
+		img {
+			left: calc(-40px - 65%);
+			width: 165%;
+		}
 	}
 }
 
 // map
 #group-5 {
+	@include to($md) {
+		max-width: 90vw;
+	}
+
 	img {
 		width: auto;
 		max-height: 800px;
@@ -105,27 +117,6 @@ figure {
 
 // footer
 #group-6 {
-	margin-top: 100px;
-
-	height: 300px;
-
-	@include from($sm) {
-		height: 400px;
-	}
-
-	@include from($md) {
-		height: 500px;
-	}
-
-	img:nth-child(1) {
-		top: 0%;
-		left: 0;
-		width: 200%;
-	}
-	img:nth-child(2) {
-		left: 0;
-		mix-blend-mode: multiply;
-	}
 }
 
 #give-way {
@@ -144,15 +135,20 @@ figure {
 		}
 	}
 
-	& + aside[role="right"] {
-		@include from($md) {
-			padding-left: 50px;
-			box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include to($md - 1px) {
+		max-width: 45vh;
+	}
+	@include from($md) {
+		overflow: visible;
+		img {
+			left: calc(-40px - 45%);
+			width: 145%;
+			position: relative;
 		}
 	}
-
-	margin-top: 50px;
-	margin-bottom: 50px;
 }
 
 #lost-weight {
@@ -182,7 +178,7 @@ figure {
 			width: 300px;
 		}
 
-		@include from($lg) {
+		@include from($md) {
 			width: auto;
 			top: 40%;
 			left: 55%;
@@ -191,23 +187,30 @@ figure {
 	}
 }
 
-#certainly-is {
-	flex: 4;
+#group-4-text {
+	@include to($md) {
+		margin-top: 100px;
+	}
 }
 
-#pink-strip {
-	@include to($sm - 1px) {
-		margin-left: -45%;
-	}
-	@include from($sm) {
-		left: -10%;
-	}
-	@include to($md) {
-		height: 761px;
-		position: relative;
-		margin-right: -20%;
-	}
-}
+// #certainly-is {
+// 	flex: 4;
+// }
+
+// #pink-strip {
+// 	@include to($sm - 1px) {
+// 		left: -30%;
+// 		position: absolute !important;
+// 	}
+// 	@include from($sm) {
+// 		left: -10%;
+// 	}
+// 	@include to($md) {
+// 		height: 761px;
+// 		position: relative;
+// 		margin-right: -20%;
+// 	}
+// }
 
 // This is what we have to work with
 // Hope to move away from the first idea (using absolute positioning)
