@@ -6,6 +6,24 @@ body {
   margin: 0;
 }
 
+.md-down {
+  display: none;
+}
+@media screen and (max-width: 899px) {
+  .md-down {
+    display: block;
+  }
+}
+
+.md-up {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .md-up {
+    display: block;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -19,27 +37,39 @@ p {
 h1 {
   line-height: 114%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   h1 {
     font-size: 112px;
   }
 }
 
 h2 {
-  line-height: 170%;
+  line-height: 135%;
+  font-size: 35px;
+  letter-spacing: -2%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   h2 {
+    line-height: 170%;
     font-size: 35px;
   }
 }
 
 h3 {
   line-height: 170%;
+  font-size: 16px;
+  letter-spacing: -2%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   h3 {
-    font-size: 28px;
+    font-size: 30px;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .intro-outro {
+    font-size: 27px;
   }
 }
 
@@ -48,7 +78,7 @@ p {
   line-height: 150%;
   font-size: 16px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   p {
     font-size: 24px;
   }
@@ -67,7 +97,7 @@ header #background {
   height: 822px;
   background-color: #eabab1;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   header #background {
     height: 2000px;
   }
@@ -83,7 +113,7 @@ header #title {
   font-weight: normal;
   text-align: center;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   header #title {
     font-size: 112px;
   }
@@ -93,13 +123,13 @@ header #authors {
   margin-bottom: 166px;
   position: relative;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   header #authors {
     margin: 55px auto 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 900px;
     margin-left: auto;
   }
 }
@@ -135,7 +165,8 @@ figure.no-bottom-desktop {
 }
 
 figure {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
   position: relative;
   width: 100%;
 }
@@ -149,24 +180,40 @@ figure img:first-child {
   position: relative;
 }
 
+figure.pullquote,
+section.pullquote {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+figure.pullquote.big,
+section.pullquote.big {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 section {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding: 0 25px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 899px) {
+  section {
+    padding: 0 25px;
+  }
 }
 @media screen and (min-width: 450px) {
   section {
     max-width: 450px;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   section {
+    padding: 0;
     max-width: 794px;
   }
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 899px) {
   section.couple {
     margin-left: auto;
     margin-right: auto;
@@ -187,7 +234,7 @@ section.couple.all aside {
 section.couple .dom {
   flex: 2;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   section.couple {
     display: flex;
     flex-direction: row;
@@ -215,10 +262,36 @@ body {
   background-color: #f5f9f1;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 899px) {
+  header {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #group-2 {
+    margin-top: -7.5vw;
+    margin-bottom: -7.5vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
   #group-3 {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  #i-have-to {
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: -0.2px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #i-have-to {
+    margin-left: 20%;
   }
 }
 
@@ -226,17 +299,18 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 899px) {
   #group-5 {
     max-width: 45vh;
+    top: 10vh;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   #group-5 {
     overflow: visible;
   }
 }
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+@media screen and (min-width: 900px) and (max-width: 1200px) {
   #group-5 img {
     left: calc(-40px - 45%);
     width: 145%;
@@ -249,73 +323,140 @@ body {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .side-exception {
+    font-size: 26px;
+  }
+}
+
 #loving-the-archery {
   position: relative;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 899px) {
   #loving-the-archery {
-    padding-top: 15%;
+    margin-top: 150px;
+    margin-bottom: 90px;
   }
 }
 #loving-the-archery img {
   position: absolute;
-  left: -50px;
-  top: -60px;
-  width: 250px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 899px) {
   #loving-the-archery img {
-    left: -75px;
-    top: -150px;
+    left: -110px;
+    top: -170px;
+    width: 300px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #loving-the-archery img {
+    left: -40px;
+    top: -160px;
     width: 350px;
     z-index: 0;
   }
+}
+#loving-the-archery h2 {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 900px) {
+  #loving-the-archery h2 {
+    width: 78%;
+    margin-left: auto;
+    box-sizing: border-box;
+  }
+}
+
+#grey-strip-right {
+  position: relative;
+}
+@media screen and (max-width: 899px) {
+  #grey-strip-right {
+    height: 907px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #grey-strip-right {
+    height: 1250px;
+  }
+}
+#grey-strip-right img {
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: auto;
 }
 
 #it-does-help {
   position: relative;
 }
-#it-does-help img {
-  position: absolute;
-}
-@media screen and (max-width: 799px) {
-  #it-does-help img {
-    top: -25%;
-    right: 67%;
-    height: 155px;
+@media screen and (max-width: 899px) {
+  #it-does-help {
+    margin-top: -75px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #it-does-help div {
+    flex: 1;
+    height: 227px;
   }
 }
-@media screen and (min-width: 800px) {
+#it-does-help img {
+  z-index: 0;
+  position: absolute;
+}
+@media screen and (max-width: 899px) {
   #it-does-help img {
-    right: -25%;
+    width: 160px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #it-does-help img {
+    right: -20%;
     top: -80%;
   }
 }
 #it-does-help h2 {
-  margin-left: auto;
   text-align: right;
-  width: 80%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 899px) {
   #it-does-help h2 {
+    flex: 4;
+  }
+}
+@media screen and (min-width: 900px) {
+  #it-does-help h2 {
+    width: 80%;
+    margin-left: auto;
     width: 70%;
   }
 }
 
-#this-calls-for h2 {
-  width: 90%;
+@media screen and (max-width: 899px) {
+  #this-calls-for {
+    margin: 50px 0;
+    width: 300px;
+  }
+  #this-calls-for h2 {
+    text-align: left;
+  }
+  #this-calls-for img {
+    width: 275px;
+    position: relative;
+    top: -20px;
+  }
 }
-#this-calls-for img {
-  width: 300px;
-  position: relative;
-  left: -50px;
-  top: -100px;
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   #this-calls-for img {
     position: absolute;
-    top: 35%;
-    left: -20%;
+    top: 160px;
+    left: -20px;
+    width: 320px;
   }
 }
 

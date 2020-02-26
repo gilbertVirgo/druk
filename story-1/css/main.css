@@ -6,6 +6,24 @@ body {
   margin: 0;
 }
 
+.md-down {
+  display: none;
+}
+@media screen and (max-width: 899px) {
+  .md-down {
+    display: block;
+  }
+}
+
+.md-up {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .md-up {
+    display: block;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -19,27 +37,33 @@ p {
 h1 {
   line-height: 114%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   h1 {
     font-size: 112px;
   }
 }
 
 h2 {
-  line-height: 170%;
+  line-height: 135%;
+  font-size: 35px;
+  letter-spacing: -2%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   h2 {
+    line-height: 170%;
     font-size: 35px;
   }
 }
 
 h3 {
   line-height: 170%;
+  font-size: 16px;
+  letter-spacing: -2%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   h3 {
-    font-size: 28px;
+    font-size: 27px;
+    letter-spacing: 0;
   }
 }
 
@@ -48,7 +72,7 @@ p {
   line-height: 150%;
   font-size: 16px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   p {
     font-size: 24px;
   }
@@ -67,7 +91,7 @@ header #background {
   height: 822px;
   background-color: #eabab1;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   header #background {
     height: 2000px;
   }
@@ -83,7 +107,7 @@ header #title {
   font-weight: normal;
   text-align: center;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   header #title {
     font-size: 112px;
   }
@@ -93,13 +117,13 @@ header #authors {
   margin-bottom: 166px;
   position: relative;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   header #authors {
     margin: 55px auto 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 900px;
     margin-left: auto;
   }
 }
@@ -135,7 +159,8 @@ figure.no-bottom-desktop {
 }
 
 figure {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
   position: relative;
   width: 100%;
 }
@@ -147,6 +172,17 @@ figure img {
 }
 figure img:first-child {
   position: relative;
+}
+
+figure.pullquote,
+section.pullquote {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+figure.pullquote.big,
+section.pullquote.big {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 section {
@@ -161,12 +197,13 @@ section {
     max-width: 450px;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   section {
+    padding: 0;
     max-width: 794px;
   }
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 899px) {
   section.couple {
     margin-left: auto;
     margin-right: auto;
@@ -187,7 +224,7 @@ section.couple.all aside {
 section.couple .dom {
   flex: 2;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   section.couple {
     display: flex;
     flex-direction: row;
@@ -226,9 +263,14 @@ header #background {
   width: 100%;
   height: 822px;
   background-color: #eabab1;
-  background: linear-gradient(180deg, #eabab1 0%, #eabab1 98%, rgba(234, 186, 177, 0) 100%);
+  background: linear-gradient(180deg, #eabab1 0%, #eabab1 70%, rgba(234, 186, 177, 0) 100%);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
+  header #background {
+    height: 1600px;
+  }
+}
+@media screen and (min-width: 1200px) {
   header #background {
     height: 2000px;
   }
@@ -262,30 +304,52 @@ figure img:first-child {
 #group-1 {
   width: 100%;
 }
+@media screen and (min-width: 900px) {
+  #group-1 {
+    margin-bottom: 125px;
+  }
+}
+
+#group-7 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 794px;
+}
 
 #group-2 {
+  margin-top: -50px;
   max-width: 700px;
 }
 
 #group-3 {
   width: 100%;
+  margin-top: 195px;
+  margin-bottom: 125px;
+}
+@media screen and (min-width: 900px) {
+  #group-3 {
+    max-width: 794px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #group-4 {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 899px) {
   #group-4 {
     max-width: 45vh;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   #group-4 {
     overflow: visible;
   }
 }
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+@media screen and (min-width: 900px) and (max-width: 1200px) {
   #group-4 img {
     left: calc(-40px - 45%);
     width: 145%;
@@ -298,49 +362,60 @@ figure img:first-child {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #group-5 {
-    max-width: 90vw;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    transform: scale(0.7);
   }
 }
 #group-5 img {
   width: auto;
   max-height: 800px;
-  left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
+#laughter-ripples {
+  text-align: center;
+}
+@media screen and (min-width: 900px) {
+  #laughter-ripples {
+    letter-spacing: -0.7px;
+  }
+}
+
 #give-way {
   margin-left: auto;
-  margin-right: auto;
 }
 #give-way #sm,
 #give-way #md {
   display: none;
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 899px) {
   #give-way #sm {
     display: block;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   #give-way #md {
     display: block;
   }
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 899px) {
   #give-way {
     max-width: 45vh;
+    margin-right: auto;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   #give-way {
     overflow: visible;
   }
   #give-way img {
-    left: calc(-40px - 45%);
+    right: 80px;
+    max-width: 45vw;
     width: 145%;
     position: relative;
   }
@@ -349,10 +424,17 @@ figure img:first-child {
 #lost-weight {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 900px) {
+  #lost-weight {
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 #lost-weight h3 {
   position: relative;
@@ -365,14 +447,14 @@ figure img:first-child {
   top: 20px;
   left: 190px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   #lost-weight img {
     top: 10%;
     left: 60%;
     width: 300px;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   #lost-weight img {
     width: auto;
     top: 40%;
@@ -381,10 +463,28 @@ figure img:first-child {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #group-4-text {
     margin-top: 100px;
   }
+}
+
+#certainly-is aside {
+  margin-right: -5%;
+}
+@media screen and (max-width: 899px) {
+  #certainly-is aside {
+    margin-right: -30%;
+    position: relative;
+    left: -20%;
+  }
+  #certainly-is aside img {
+    height: 530px;
+  }
+}
+#certainly-is div {
+  font-weight: bold;
+  flex: 10;
 }
 
 /*# sourceMappingURL=main.css.map */

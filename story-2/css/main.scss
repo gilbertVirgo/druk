@@ -7,9 +7,19 @@ body {
 	background-color: #f5f9f1;
 }
 
+header {
+	@include to($md - 1px) {
+		padding-top: 0;
+	}
+}
+
 #group-1 {
 }
 #group-2 {
+	@include from($md) {
+		margin-top: -7.5vw;
+		margin-bottom: -7.5vw;
+	}
 }
 #group-3 {
 	@include from($md) {
@@ -17,6 +27,18 @@ body {
 		margin-right: auto;
 	}
 }
+
+#i-have-to {
+	@include to($md - 1px) {
+		font-size: 16px;
+		line-height: 175%;
+		letter-spacing: -0.2px;
+	}
+	@include from($md) {
+		margin-left: 20%;
+	}
+}
+
 #group-4 {
 }
 #group-5 {
@@ -25,6 +47,7 @@ body {
 
 	@include to($md - 1px) {
 		max-width: 45vh;
+		top: 10vh;
 	}
 	@include from($md) {
 		overflow: visible;
@@ -42,72 +65,131 @@ body {
 		}
 	}
 }
+
+.side-exception {
+	@include to($md) {
+		font-size: 26px;
+	}
+}
+
 #loving-the-archery {
 	position: relative;
 
-	@include to($lg) {
-		padding-top: 15%;
+	@include to($md - 1px) {
+		margin-top: 150px;
+		margin-bottom: 90px;
 	}
-
-	img {
-		position: absolute;
-
-		left: -50px;
-		top: -60px;
-		width: 250px;
-
-		@include from($lg) {
-			left: -75px;
-			top: -150px;
-			width: 350px;
-			z-index: 0;
-		}
-	}
-}
-#it-does-help {
-	position: relative;
 
 	img {
 		position: absolute;
 
 		@include to($md - 1px) {
-			top: -25%;
-			right: 67%;
-			height: 155px;
+			left: -110px;
+			top: -170px;
+			width: 300px;
 		}
 
 		@include from($md) {
-			right: -25%;
+			left: -40px;
+			top: -160px;
+			width: 350px;
+			z-index: 0;
+		}
+	}
+
+	h2 {
+		box-sizing: border-box;
+		position: relative;
+		z-index: 1;
+
+		@include from($md) {
+			width: 78%;
+			margin-left: auto;
+			box-sizing: border-box;
+		}
+	}
+}
+#grey-strip-right {
+	position: relative;
+	@include to($md - 1px) {
+		height: 907px;
+	}
+	@include from($md) {
+		height: 1250px;
+	}
+	img {
+		left: 0;
+		top: 0;
+		position: absolute;
+		height: 100%;
+		width: auto;
+	}
+}
+#it-does-help {
+	position: relative;
+
+	@include to($md - 1px) {
+		margin-top: -75px;
+		margin-bottom: 25px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		div {
+			flex: 1;
+			height: 227px;
+		}
+	}
+
+	img {
+		z-index: 0;
+		position: absolute;
+
+		@include to($md - 1px) {
+			width: 160px;
+		}
+
+		@include from($md) {
+			right: -20%;
 			top: -80%;
 		}
 	}
 	h2 {
-		margin-left: auto;
 		text-align: right;
-
-		width: 80%;
+		@include to($md - 1px) {
+			flex: 4;
+		}
 
 		@include from($md) {
+			width: 80%;
+			margin-left: auto;
 			width: 70%;
 		}
 	}
 }
 
 #this-calls-for {
-	h2 {
-		width: 90%;
+	@include to($md - 1px) {
+		margin: 50px 0;
+		width: 300px;
+
+		h2 {
+			text-align: left;
+		}
+
+		img {
+			width: 275px;
+			position: relative;
+			top: -20px;
+		}
 	}
 
-	img {
-		width: 300px;
-		position: relative;
-		left: -50px;
-		top: -100px;
-
-		@include from($lg) {
+	@include from($md) {
+		img {
 			position: absolute;
-			top: 35%;
-			left: -20%;
+			top: 160px;
+			left: -20px;
+			width: 320px;
 		}
 	}
 }

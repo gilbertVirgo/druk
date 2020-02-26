@@ -21,11 +21,15 @@ header #background {
 	background: linear-gradient(
 		180deg,
 		#eabab1 0%,
-		#eabab1 98%,
+		#eabab1 70%,
 		rgba(234, 186, 177, 0) 100%
 	);
 
 	@include from($md) {
+		height: 1600px;
+	}
+
+	@include from($lg) {
 		height: 2000px;
 	}
 }
@@ -62,16 +66,37 @@ figure {
 // canopy
 #group-1 {
 	width: 100%;
+
+	@include from($md) {
+		margin-bottom: 125px;
+	}
+}
+
+#group-7 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	max-width: 794px;
 }
 
 // buffet
 #group-2 {
+	margin-top: -50px;
 	max-width: 700px;
 }
 
 // hands
 #group-3 {
 	width: 100%;
+
+	margin-top: 195px;
+	margin-bottom: 125px;
+
+	@include from($md) {
+		max-width: 794px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 // pool
@@ -101,17 +126,28 @@ figure {
 
 // map
 #group-5 {
+	// left: -5%
+
 	@include to($md) {
-		max-width: 90vw;
+		margin-top: -100px;
+		margin-bottom: -100px;
+		transform: scale(0.7);
 	}
 
 	img {
 		width: auto;
 		max-height: 800px;
-		left: 0;
 		right: 0;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+
+#laughter-ripples {
+	text-align: center;
+
+	@include from($md) {
+		letter-spacing: -0.7px;
 	}
 }
 
@@ -136,17 +172,20 @@ figure {
 	}
 
 	margin-left: auto;
-	margin-right: auto;
 
 	@include to($md - 1px) {
 		max-width: 45vh;
+		margin-right: auto;
 	}
 	@include from($md) {
 		overflow: visible;
 		img {
-			left: calc(-40px - 45%);
+			right: 80px;
+			max-width: 45vw;
 			width: 145%;
 			position: relative;
+
+			//  Fix this
 		}
 	}
 }
@@ -154,10 +193,16 @@ figure {
 #lost-weight {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	position: relative;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	@include from($md) {
+		justify-content: center;
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
 
 	h3 {
 		position: relative;
@@ -193,9 +238,26 @@ figure {
 	}
 }
 
-// #certainly-is {
-// 	flex: 4;
-// }
+#certainly-is {
+	aside {
+		margin-right: -5%;
+
+		@include to($md - 1px) {
+			margin-right: -30%;
+			position: relative;
+			left: -20%;
+
+			img {
+				height: 530px;
+			}
+		}
+	}
+
+	div {
+		font-weight: bold;
+		flex: 10;
+	}
+}
 
 // #pink-strip {
 // 	@include to($sm - 1px) {

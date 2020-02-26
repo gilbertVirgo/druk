@@ -7,6 +7,19 @@ body {
 	margin: 0;
 }
 
+.md-down {
+	display: none;
+	@include to($md - 1px) {
+		display: block;
+	}
+}
+.md-up {
+	display: none;
+	@include from($md) {
+		display: block;
+	}
+}
+
 h1,
 h2,
 h3,
@@ -25,16 +38,30 @@ h1 {
 }
 
 h2 {
-	line-height: 170%;
+	line-height: 135%;
+	font-size: 35px;
+	letter-spacing: -2%;
+
 	@include from($md) {
+		line-height: 170%;
 		font-size: 35px;
 	}
 }
 
 h3 {
 	line-height: 170%;
+	font-size: 16px;
+	letter-spacing: -2%;
+
 	@include from($md) {
-		font-size: 28px;
+		font-size: 30px;
+		letter-spacing: 0;
+	}
+}
+
+.intro-outro {
+	@include from($md) {
+		font-size: 27px;
 	}
 }
 
@@ -128,7 +155,8 @@ figure {
 }
 
 figure {
-	margin: 0;
+	margin-left: 0;
+	margin-right: 0;
 	position: relative;
 	width: 100%;
 
@@ -144,18 +172,35 @@ figure {
 	}
 }
 
+figure,
+section {
+	&.pullquote {
+		margin-top: 25px;
+		margin-bottom: 25px;
+
+		&.big {
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+	}
+}
+
 section {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	padding: 0 25px;
 	box-sizing: border-box;
+
+	@include to($md - 1px) {
+		padding: 0 25px;
+	}
 
 	@include from($sm) {
 		max-width: $sm;
 	}
 
 	@include from($md) {
+		padding: 0;
 		max-width: 794px;
 	}
 
