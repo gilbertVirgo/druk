@@ -40,6 +40,12 @@ header {
 }
 
 #group-4 {
+	img:nth-child(2) {
+		@include to($md - 1px) {
+			width: 110%;
+			margin-left: -5%;
+		}
+	}
 }
 #group-5 {
 	margin-left: auto;
@@ -47,7 +53,7 @@ header {
 
 	@include to($md - 1px) {
 		max-width: 45vh;
-		top: 10vh;
+		top: 5vh;
 	}
 	@include from($md) {
 		overflow: visible;
@@ -112,7 +118,7 @@ header {
 #grey-strip-right {
 	position: relative;
 	@include to($md - 1px) {
-		height: 907px;
+		height: 1000px;
 	}
 	@include from($md) {
 		height: 1250px;
@@ -136,6 +142,7 @@ header {
 		align-items: center;
 
 		div {
+			position: relative;
 			flex: 1;
 			height: 227px;
 		}
@@ -146,6 +153,7 @@ header {
 		position: absolute;
 
 		@include to($md - 1px) {
+			left: -20px;
 			width: 160px;
 		}
 
@@ -157,7 +165,8 @@ header {
 	h2 {
 		text-align: right;
 		@include to($md - 1px) {
-			flex: 4;
+			flex: 6;
+			letter-spacing: -0.2px;
 		}
 
 		@include from($md) {
@@ -170,7 +179,7 @@ header {
 
 #this-calls-for {
 	@include to($md - 1px) {
-		margin: 50px 0;
+		margin: 50px 0 30px;
 		width: 300px;
 
 		h2 {
@@ -178,13 +187,15 @@ header {
 		}
 
 		img {
-			width: 275px;
+			width: 240px;
 			position: relative;
+			left: -10px;
 			top: -20px;
 		}
 	}
 
 	@include from($md) {
+		top: -85px;
 		img {
 			position: absolute;
 			top: 160px;

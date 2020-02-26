@@ -295,6 +295,13 @@ body {
   }
 }
 
+@media screen and (max-width: 899px) {
+  #group-4 img:nth-child(2) {
+    width: 110%;
+    margin-left: -5%;
+  }
+}
+
 #group-5 {
   margin-left: auto;
   margin-right: auto;
@@ -302,7 +309,7 @@ body {
 @media screen and (max-width: 899px) {
   #group-5 {
     max-width: 45vh;
-    top: 10vh;
+    top: 5vh;
   }
 }
 @media screen and (min-width: 900px) {
@@ -374,7 +381,7 @@ body {
 }
 @media screen and (max-width: 899px) {
   #grey-strip-right {
-    height: 907px;
+    height: 1000px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -402,6 +409,7 @@ body {
     align-items: center;
   }
   #it-does-help div {
+    position: relative;
     flex: 1;
     height: 227px;
   }
@@ -412,6 +420,7 @@ body {
 }
 @media screen and (max-width: 899px) {
   #it-does-help img {
+    left: -20px;
     width: 160px;
   }
 }
@@ -426,7 +435,8 @@ body {
 }
 @media screen and (max-width: 899px) {
   #it-does-help h2 {
-    flex: 4;
+    flex: 6;
+    letter-spacing: -0.2px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -439,19 +449,23 @@ body {
 
 @media screen and (max-width: 899px) {
   #this-calls-for {
-    margin: 50px 0;
+    margin: 50px 0 30px;
     width: 300px;
   }
   #this-calls-for h2 {
     text-align: left;
   }
   #this-calls-for img {
-    width: 275px;
+    width: 240px;
     position: relative;
+    left: -10px;
     top: -20px;
   }
 }
 @media screen and (min-width: 900px) {
+  #this-calls-for {
+    top: -85px;
+  }
   #this-calls-for img {
     position: absolute;
     top: 160px;
