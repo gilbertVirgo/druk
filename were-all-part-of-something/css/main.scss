@@ -129,6 +129,10 @@ figure {
 #group-5 {
 	// left: -5%
 
+	@include to($sm) {
+		left: -8%;
+	}
+
 	@include to($md) {
 		margin-top: -100px;
 		margin-bottom: -100px;
@@ -248,8 +252,16 @@ figure {
 			position: relative;
 			left: -20%;
 
+			@include to(350px) {
+				margin-right: -55%;
+				left: -35%;
+			}
+
 			img {
 				height: 530px;
+				@include to(350px) {
+					height: 700px;
+				}
 			}
 		}
 	}

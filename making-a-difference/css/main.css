@@ -379,9 +379,14 @@ body {
 #grey-strip-right {
   position: relative;
 }
+@media screen and (max-width: 350px) {
+  #grey-strip-right {
+    height: 1150px !important;
+  }
+}
 @media screen and (max-width: 899px) {
   #grey-strip-right {
-    height: 1000px;
+    height: 850px;
   }
 }
 @media screen and (min-width: 900px) {

@@ -373,6 +373,11 @@ figure img:first-child {
   }
 }
 
+@media screen and (max-width: 450px) {
+  #group-5 {
+    left: -8%;
+  }
+}
 @media screen and (max-width: 900px) {
   #group-5 {
     margin-top: -100px;
@@ -489,8 +494,21 @@ figure img:first-child {
     position: relative;
     left: -20%;
   }
+}
+@media screen and (max-width: 899px) and (max-width: 350px) {
+  #certainly-is aside {
+    margin-right: -55%;
+    left: -35%;
+  }
+}
+@media screen and (max-width: 899px) {
   #certainly-is aside img {
     height: 530px;
+  }
+}
+@media screen and (max-width: 899px) and (max-width: 350px) {
+  #certainly-is aside img {
+    height: 700px;
   }
 }
 #certainly-is div {

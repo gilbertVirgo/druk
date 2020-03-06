@@ -117,8 +117,11 @@ header {
 }
 #grey-strip-right {
 	position: relative;
+	@include to(350px) {
+		height: 1150px !important;
+	}
 	@include to($md - 1px) {
-		height: 1000px;
+		height: 850px;
 	}
 	@include from($md) {
 		height: 1250px;
